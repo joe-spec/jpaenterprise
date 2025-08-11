@@ -1,0 +1,764 @@
+#loader-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 111;
+    width: 100%;
+    height: 100vh;
+    background: #000927;
+}
+#loader-board .d-flex{
+    margin: -20px 0 0 0;
+}
+
+.j{
+    font-size: 70px;
+    animation: bouncej .8s ease-in-out;
+    color: rgb(12, 70, 161);
+    font-weight: 900;
+}
+.p{
+    font-size: 70px;
+    animation: bouncep 1.2s ease-in-out;
+    color: rgb(12, 70, 161);
+    font-weight: 900;
+}
+.a{
+    font-size: 70px;
+    animation: bouncea 1s ease-in-out;
+    color: rgb(12, 70, 161);
+    font-weight: 900;
+}
+#loader-board p:nth-child(1){
+    font-size: 20px;
+    color: white;
+    animation: land1 .41s ease-in-out;
+}
+#loader-board p:nth-child(2){
+    font-size: 20px;
+    color: white;
+    animation: land1 1.2s ease-in-out;
+}
+#loader-board p:nth-child(3){
+    font-size: 20px;
+    color: white;
+    animation: land1 .5s ease-in-out;
+}
+#loader-board p:nth-child(4){
+    font-size: 20px;
+    color: white;
+    animation: land1 1.6s ease-in-out;
+}
+#loader-board p:nth-child(5){
+    font-size: 20px;
+    color: white;
+    animation: land1 1.1s ease-in-out;
+}
+#loader-board p:nth-child(6){
+    font-size: 20px;
+    color: white;
+    animation: land1 .57s ease-in-out;
+}
+#loader-board p:nth-child(7){
+    font-size: 20px;
+    color: white;
+    animation: land1 2.2s ease-in-out;
+}
+#loader-board p:nth-child(8){
+    font-size: 20px;
+    color: white;
+    animation: land1 1.4s ease-in-out;
+}
+#loader-board p:nth-child(9){
+    font-size: 20px;
+    color: white;
+    animation: land1 2.6s ease-in-out;
+}
+#loader-board p:nth-child(10){
+    font-size: 20px;
+    color: white;
+    animation: land1 .8s ease-in-out;
+}
+
+@keyframes bouncej {
+  0% { transform: translateY(-100vh); }
+  10% { transform: translateY(0vh); }
+  30% { transform: translateY(-20vh); }
+  50% { transform: translateY(0vh); }
+  70% { transform: translateY(-10vh); }
+  85% { transform: translateY(0vh); }
+  90% { transform: translateY(-4vh); }
+  100% { transform: translateY(0vh); }
+}
+@keyframes bouncep {
+  0% { transform: translateY(-100vh); }
+  10% { transform: translateY(0vh); }
+  30% { transform: translateY(-20vh); }
+  50% { transform: translateY(0vh); }
+  70% { transform: translateY(-10vh); }
+  85% { transform: translateY(0vh); }
+  90% { transform: translateY(-4vh); }
+  100% { transform: translateY(0vh); }
+}
+@keyframes bouncea {
+  0% { transform: translateY(-100vh); }
+  10% { transform: translateY(0vh); }
+  30% { transform: translateY(-20vh); }
+  50% { transform: translateY(0vh); }
+  70% { transform: translateY(-10vh); }
+  85% { transform: translateY(0vh); }
+  90% { transform: translateY(-4vh); }
+  100% { transform: translateY(0vh); }
+}
+@keyframes land1 {
+    from { transform: translateX(-300px); opacity: 0;}
+    to { transform: translateX(0px); opacity: 1;}
+}
+@keyframes land2 {
+    from { transform: translateX(-300px); opacity: 0;}
+    to { transform: translateX(0px); opacity: 1;}
+}
+@keyframes land3 {
+    from { transform: translateX(-300px); opacity: 0;}
+    to { transform: translateX(0px); opacity: 1;}
+}
+@keyframes land4 {
+    from { transform: translateX(-300px); opacity: 0;}
+    to { transform: translateX(0px); opacity: 1;}
+}
+@keyframes land5 {
+    from { transform: translateX(-300px); opacity: 0;}
+    to { transform: translateX(0px); opacity: 1;}
+}
+@keyframes land6 {
+    from { transform: translateX(-300px); opacity: 0;}
+    to { transform: translateX(0px); opacity: 1;}
+}
+@keyframes land7 {
+    from { transform: translateX(-300px); opacity: 0;}
+    to { transform: translateX(0px); opacity: 1;}
+}
+@keyframes land8 {
+    from { transform: translateX(-300px); opacity: 0;}
+    to { transform: translateX(0px); opacity: 1;}
+}
+@keyframes land9 {
+    from { transform: translateX(-300px); opacity: 0;}
+    to { transform: translateX(0px); opacity: 1;}
+}
+@keyframes land10 {
+    from { transform: translateX(-300px); opacity: 0;}
+    to { transform: translateX(0px); opacity: 1;}
+}
+
+#myDiv {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: .5s;
+  animation-name: animatebottom;
+  animation-duration: .5s;
+  display: none;
+}
+@-webkit-keyframes animatebottom {
+  from { opacity:0 } 
+  to { opacity:1 }
+}
+
+
+@keyframes animatebottom { 
+  from{ opacity:0 } 
+  to{ opacity:1 }
+}
+
+.btn-primary{
+    background: #000927;
+    border: 1px solid #000927;
+}
+.btn-primary:hover{
+    background: rgb(12, 70, 161);
+    border: 1px solid rgb(12, 70, 161);
+}
+
+p, .btn, li, div{
+    font-size: 14px;
+}
+
+@media screen and (max-width: 886px) {
+    .hero #carousel{
+        height: 63vh;
+        overflow: hidden;
+    }
+    .floatingcard{
+        margin: -50px 0 0 45%;
+        display: none;
+    }
+    .hero #carousel .carousel-inner .carousel-caption{
+        top: 10vh;
+    }
+    p, .btn, li, div{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 24px;
+    }
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+/* Different directions */
+.from-left {
+  transform: translateX(-100px);
+}
+.from-right {
+  transform: translateX(100px);
+}
+.from-bottom {
+  transform: translateY(100px);
+}
+/* Active state triggers the animation */
+.slide-in.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#abouttop, #servicetop, #contacttop, #portfoliotop{
+    height: 50px;
+    width: 100%;
+    /* border: 3px solid red; */
+}
+
+
+/* Top Nav */
+nav .links a{
+    text-decoration: none;
+    background: #000927;
+    color: whitesmoke;
+    font-size: 11px;
+    padding: 5px;
+    border-radius: 30%;
+}
+
+/* Navbar */
+.navbar{
+    background: #000927;
+}
+.navbar .navbar-brand img{
+    width: 70px;
+}
+
+/* Hero Section */
+.hero .overlay{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: #000927;
+    opacity: .8;
+    z-index: 1;
+}
+.hero #carousel{
+    height: 83vh;
+    overflow: hidden;
+}
+.hero #carousel .carousel-inner{
+    height: 83vh;
+}
+.hero #carousel .carousel-inner img{
+    height: 83vh;
+    object-fit: cover;
+}
+.hero #carousel .carousel-inner .carousel-caption{
+    top: 35vh;
+    z-index: 2;
+    text-align: left;
+}
+.hero #carousel .carousel-inner .carousel-caption{
+    top: 25vh;
+    z-index: 2;
+    text-align: left;
+}
+.hero #carousel .carousel-inner .carousel-caption .btn{
+    background: rgb(12, 70, 161);
+    color: #fff;
+}
+.hero #carousel .carousel-inner .carousel-caption .btn:hover{
+    background: rgb(16, 89, 206);
+    color: #fff;
+}
+
+
+/* floating card section */
+.floatingcard{
+    margin: 30px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.floatingcard .floating{
+    text-align: center;
+}
+.floatingcard .floating .inner{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-right: 2px solid rgb(12, 70, 161);
+    border-top: 2px solid rgb(12, 70, 161);
+    border-radius: 50px;
+}
+.floatingcard .floating .circle{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border-right: 2px solid rgb(12, 70, 161);
+    border-top: 2px solid rgb(12, 70, 161);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 70px 5px 70px;
+    color: rgb(12, 70, 161);
+    font-size: 30px;
+}
+.floatingcard .floating .lead{
+    font-size: 18px;
+    color: rgb(12, 70, 161);
+    font-weight: 100;
+}
+
+
+/* about section */
+#about .image{
+    position: relative;
+}
+#about .image .overflow-text{
+    width: fit-content;
+    padding: 20px 30px;
+    background-color: #000927;
+    position: absolute;
+    top: 40px;
+    left: -20px;
+}
+#about .image .overflow-text li{
+    list-style-type: none;
+    padding: 6px 0;
+    font-weight: 700;
+    color: rgb(12, 70, 161);
+}
+#about .text h3{
+    font-size: 60px;
+    font-weight: 300;
+    color: rgb(12, 70, 161);
+}
+#about .text h2{
+    border-bottom: 1px solid #000927;
+    border-top: 1px solid #000927;
+    color: #000927;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/* about page */
+.banner{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 50px; */
+    background: url('../images/background/Hands\ touching\ digital\ global\ form\ lines\,\ triangles\ and\ particle\ style\ design_\ illustration\ vector\ _\ Premium\ Vector.jpg') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.banner .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    background: rgba(1, 7, 44, 0.747);
+}
+.banner .container, .banner h2{
+    z-index: 111;
+    color: white
+}
+.banner .images .col-md-2{
+    height: 120px;
+    overflow: hidden;
+}
+.banner .images .col-md-2:nth-child(even){
+    height: 200px;
+    overflow: hidden;
+}
+.banner .images .col-md-2 img{
+    transition: .2s;
+    height: 100%;
+}
+.banner .images .col-md-2:hover img{
+    transform: scale(1.2);
+}
+#about .why-us ul li:nth-child(odd){
+    background: #000927;
+    list-style-type: none;
+    padding: 10px;
+    color: whitesmoke;
+    transition: .3s;
+}
+#about .why-us ul li:nth-child(odd):hover{
+    background: #01175e;
+    list-style-type: none;
+    padding: 10px;
+    color: whitesmoke;
+}
+#about .why-us ul li:nth-child(even){
+    background: rgb(12, 70, 161);
+    list-style-type: none;
+    padding: 10px;
+    color: whitesmoke;
+    transition: .3s;
+}
+#about .why-us ul li:nth-child(even):hover{
+    background: rgb(16, 89, 206);
+    list-style-type: none;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.meet-team {
+    position: relative;
+    background: url('../images/background/connect.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.meet-team .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 550vh;
+    background: rgba(0,0,0,0.8);
+    background-attachment: fixed;
+}
+.meet-team .row{
+    position: relative;
+    color: whitesmoke;
+}
+.meet-team h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #000927;
+}
+.meet-team h3 {
+  color: #000927;
+}
+.meet-team .text {
+  background: rgba(0,0,0,0.1);
+  border-radius: 5px;
+  padding: 20px;
+}
+.meet-team .text p{
+  opacity: .6;
+}
+
+.meet-team .meet-team-card .col-md-4{
+  background: rgba(0,0,0,0.1);
+  border-radius: 5px;
+  padding: 20px;
+}
+.meet-team .meet-team-card .col-md-4 small{
+  opacity: .6;
+}
+
+.team-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: rgb(12, 70, 161);
+}
+
+.team-section .team-slider {
+  padding-bottom: 40px;
+}
+
+.team-section .team-member {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.team-section .team-member img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.team-section .team-member h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.team-section .team-member .role {
+  font-weight: 300;
+  font-size: 13px;
+  color: rgb(12, 70, 161);
+  margin-bottom: 10px;
+}
+
+.team-section .team-member .bio {
+  font-size: 0.95rem;
+}
+.team-section .team-member .hidebtn {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center; 
+    padding: 40px;
+    background: rgba(0, 0, 0, .9);
+    transition: .5s;
+}
+.team-section .team-member:hover.team-member .hidebtn {
+    left: 0%;
+}
+
+.team-section .swiper-button-nextt {
+  color: rgb(12, 70, 161);
+  font-size: 30px !important;
+  position: absolute;
+  right: -5%;
+  top: 40%;
+}
+.team-section .swiper-button-prevv {
+  color: rgb(12, 70, 161);
+  font-size: 30px !important;
+  position: absolute;
+  top: 40%;
+  left: -5%;
+}
+
+.team-section .swiper-button-next:hover,
+.team-section .swiper-button-prev:hover {
+  color: #000927;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-member {
+    padding: 15px;
+  }
+}
+
+
+/* service section */
+#service h2{
+    border-bottom: 1px solid #000927;
+    border-top: 1px solid #000927;
+    color: #000927;
+    font-size: 20px;
+    padding: 5px;
+    text-align: end;
+    margin: 20px 0 30px 0;
+}
+#service .col-md-8 .row .col-md-5{
+    border-left: 2px solid #000927;
+    border-top: 2px solid #000927;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+#service .col-md-8 .row .col-md-5:nth-child(even){
+    border: none;
+    border-right: 2px solid rgb(12, 70, 161);
+    border-bottom: 2px solid rgb(12, 70, 161);
+    border-radius: 5px;
+    position: relative;
+}
+#service .col-md-8 .row .col-md-5:nth-child(odd) .service-icon  {
+    position: absolute;
+    top: -17px;
+    left: -10px;
+    font-size: 13px;
+    color: rgb(12, 70, 161);
+    background: #000927;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#service .col-md-8 .row .col-md-5:nth-child(even) .service-icon {
+    position: absolute;
+    bottom: -17px;
+    right: -10px;
+    font-size: 13px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000927;
+    background: rgb(12, 70, 161);
+}
+
+.servicebanner{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../images/construction.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.servicebanner .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    background: rgba(1, 7, 44, 0.747);
+}
+.servicebanner .container, .servicebanner h2{
+    z-index: 111;
+    color: white
+}
+.servicecards{
+    transition: .4s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background: #000927;
+    color: whitesmoke;
+}
+.servicecards:hover{
+    transform: translateY(-10px);
+    background: #01175e;
+}
+
+/* portfolio section */
+#portfoliotop{
+    height: fit-content;
+}
+.portfoliotop h2{
+    border-bottom: 1px solid #000927;
+    border-top: 1px solid #000927;
+    color: #000927;
+    font-size: 20px;
+    padding: 5px;
+    margin: 20px 0 30px 0;
+    width: fit-content;
+}
+#portfoliotop .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#portfoliotop .gallery a {
+    margin: 10px;
+    display: inline-block;
+}
+
+#portfoliotop .gallery img {
+    width: 180px;
+    height: auto;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.portfoliobanner{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../images/about\ 3.jpg');
+    background-size: 100px;
+    background-position: center;
+}
+.portfoliobanner .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    background: rgba(1, 7, 44, 0.747);
+}
+.portfoliobanner .container, .portfoliobanner h2{
+    z-index: 111;
+    color: white
+}
+
+
+/* contact section */
+.contactbanner{
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../images/background/Globe\ 2.jpg')no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.contactbanner .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30vh;
+    background: rgba(1, 7, 44, 0.747);
+}
+.contactbanner .container, .contactbanner h2{
+    z-index: 111;
+    color: white
+}
+
+/* footer section */
+.footer-wrapper{
+    background: url('../images/background/Globe\ 2.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#contact{
+    color: whitesmoke;
+    background: rgba(12, 70, 161, .9);
+}
+#contact nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+    margin: 10px 0;
+}
+.footer{
+    background: #000927ee;
+    color: whitesmoke;
+}
