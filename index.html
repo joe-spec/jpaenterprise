@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/main.css">
     <link rel="stylesheet" href="./assets/lightbox/dist/css/lightbox.min.css">
 </head>
-<body onload="myFunction()">
+<body onload="myFunction()"  data-bs-spy="scroll" data-bs-target="#navscroll" data-bs-offset="0" tabindex="0">
     <div id="loader-board">
          <div class="d-flex">
              <div class="j">J</div>
@@ -24,50 +24,14 @@
     </div>
    <div id="myDiv">
 
-         
+        
     <!-- Top Nav -->
-     <nav class="bg-light d-none d-md-block">
-        <div class="container">
-            <div class="row py-3">
-                <div class="col-4 d-flex align-items-center">
-                    <small class="mx-1">
-                        <i class="fa fa-location-dot h6 text-danger"> </i>
-                    </small>
-                    <small class="mx-1">
-                        <span style="font-size: 12px; opacity: .7;">3638 Darvell Circle, Aberdeen 21001, Maryland, USA</span> <br>
-                        <span style="font-size: 12px; opacity: .7;">ABUJA: 68 Kwame Nkrumah Crescent, Asokoro.</span>
-                    </small>
-                </div>
-                <div class="col-3 d-flex align-items-center">
-                    <small class="mx-1">
-                        <i class="fa fa-phone h6 text-success"> </i>
-                    </small>
-                    <small class="mx-1">
-                        <span style="font-size: 12px; opacity: .7;">+1-571-343-6300 <br> +491510387765</span>
-                    </small>
-                </div>
-                <div class="col-5 links justify-content-end d-flex align-items-center">
-                    <a href="#" class="mx-1">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="#" class="mx-1">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="mx-1">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" class="mx-1">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-     </nav>
+    <div id="topnav"></div>
      <!-- Top Nav -->
 
 
       <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navscroll">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img class="" src="./images/jpa logo.png" alt="logo">
@@ -77,7 +41,7 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#myDiv">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#abouttop">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#servicetop">Services</a></li>
                 <li class="nav-item"><a class="nav-link" href="#portfoliotop">Portfolio</a></li>
@@ -89,9 +53,9 @@
     <!-- Navbar -->
 
 
-    <div class="" data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="0" tabindex="0">
+    <div class="" >
         <!-- Hero Section -->
-         <div id="hometop"></div>
+         <div></div>
         <section id="home" class="hero">
             <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="overlay"></div>
@@ -108,7 +72,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./images/background/equipment.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption">
+                        <div class="carousel-caption slide-in from-left">
                             <h1>EQUIPMENT AND SPARE PARTS PROCUREMENT</h1>
                             <p>Our global procurement division is designed and well-positioned to help our clients source the best quality heavy-duty machines and day-to-day work tools from reputable and approved partners across...</p>
                             <a href="service.html" class="btn">Checkout Our Services</a>
@@ -116,7 +80,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="./images/background/about.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption">
+                        <div class="carousel-caption slide-in from-bottom">
                             <h1>INFRASTRUCTURE AND PIPELINE SECURITY</h1>
                             <p>In Nigeria,the oil & gas sector has remained one of the most important sources of revenue and energy generation. With the increasing demand for Nigeria’s oil & gas products, it is absolutely imperative to...</p>
                             <a href="service.html" class="btn">Checkout Our Services</a>
@@ -124,7 +88,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="./images/about 3.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption">
+                        <div class="carousel-caption slide-in from-left">
                             <h1>ROAD CONSTRUCTION, FURNISHING, INTERLOCKINGAND REHABILITATION</h1>
                             <p>At JPA, we offer top-tier road construction, furnishing, and rehabilitation services for highways, residential, commercial, and industrial purposes...</p>
                             <a href="service.html" class="btn">Checkout Our Services</a>
@@ -132,7 +96,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="./images/background/What are Hosted Services and How it Revolutionizes Modern Business.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption">
+                        <div class="carousel-caption slide-in from-left">
                             <h1>IT SERVICES</h1>
                             <p>We understand that in today’s world, organizations and communities that will have both relevance and dominance are those that are not only focused on offering the best services, products,...</p>
                             <a href="service.html" class="btn">Checkout Our Services</a>
@@ -140,7 +104,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="./images/background/building.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption">
+                        <div class="carousel-caption slide-in from-left">
                             <h1>BUILDING DESIGN, CONSTRUCTION, MAINTENANCE AND RENOVATIONS</h1>
                             <p>At JPA, we are focused on bridging the critical gaps within Africa’s real estate industry by offering development designs,...</p>
                             <a href="service.html" class="btn">Checkout Our Services</a>
@@ -148,7 +112,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="./images/background/office.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption">
+                        <div class="carousel-caption slide-in from-left">
                             <h1>OFFICE EQUIPMENT, SUPPLIES AND FURNITURE</h1>
                             <p>For an organization like yours, whose day-to-day productivity is largely dependent on individuals’ and team performances, the availability and functionality of key resources cannot be...</p>
                             <a href="service.html" class="btn">Checkout Our Services</a>
@@ -156,7 +120,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="./images/background/Business IT Consulting_ Issues, Benefits, and When to Hire _ by It Services India _ Nov, 2022.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption">
+                        <div class="carousel-caption slide-in from-left">
                             <h1>CONSULTANCY AND PROJECT MANAGEMENT</h1>
                             <ul>
                                 <li>COMMUNITY EMPOWERMENT & TRANSFORMATION</li>
@@ -169,7 +133,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="./images/background/Transportation and logistics_ _ Premium Photo.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption">
+                        <div class="carousel-caption slide-in from-left">
                             <h1>ONSHORE / OFFSHORE LOGISTICS AND SUPPORT SERVICES</h1>
                             <p>We have the expertise, human capital, tools and technologies required to effectively respond to the administrative and...</p>
                             <a href="service.html" class="btn">Checkout Our Services</a>
@@ -187,7 +151,7 @@
             </div>
         </section>
         <!-- Hero Section -->
-
+        
         <!-- floating card section -->
         <section class="floatingcard d-none d-md-flex"  id="stats">
             <div class="floating slide-in from-bottom">
@@ -211,7 +175,7 @@
 
         <!-- About Us Section -->
          <div id="abouttop"></div>
-        <section id="about" class="bg-light py-5 mt-5">
+        <section id="about" class="bg-light py-5">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-6 image">
@@ -222,7 +186,7 @@
                         </ul>
                         <img src="./images/background/about2.jpg" alt="About Us" class="img-fluid rounded">
                     </div>
-                    <div class="col-md-6 text">
+                    <div class="col-md-6 text slide-in from-right">
                         <h2 class="mb-3">About US</h2>
                         <h3 class="mb-3 lead">JPA Enterprise Limited</h3>
                         <p> 
@@ -247,9 +211,9 @@
         <div class="overlay"></div>
         <div class="container">
             <div class="row g-5 align-items-center">
-                <div class="col-md-4 text">
-                    <h2>Team Experience</h2>
-                    <p class="lead d-none d-md-block">
+                <div class="col-md-5 text">
+                    <h2 class=" slide-in from-left">Team Experience</h2>
+                    <p class="slide-in from-left">
                         Our team is made up of seasoned, trained, certified, and highly
                         experienced experts, professors, IT (artificial intelligence, networking,
                         and software) engineers, HSE experts, specialized consultants, and
@@ -259,33 +223,19 @@
                         access modern tools and technologies, provide global standard
                         solutions, and deliver unmatched results to our clients.
                     </p>
-                    <p class="d-md-none">
-                        Our team is made up of seasoned, trained, certified, and highly
-                        experienced experts, professors, IT (artificial intelligence, networking,
-                        and software) engineers, HSE experts, specialized consultants, and
-                        project managers who have handled large and very complex projects
-                        for clients across different continents and industries. This vast pool of
-                        talents and technical resources makes it possible and easy for us to
-                        access modern tools and technologies, provide global standard
-                        solutions, and deliver unmatched results to our clients.
-                    </p>
-                </div>
-                <div class="col-md-8 meet-team-card">
-                    <div class="row justify-content-end  my-1 slide-in from-right">
-                        <div class="col-md-4">
-                            <h3>Success Rate</h3>
-                            <h2 class="text-end p-0 m-0 count" data-target="92">0<span>%</span></h2>
+                    <div class="row justify-content-center my-1 slide-in from-right" id="stats">
+                        <div class="col-md-5 my-1 rounded mx-md-1 bg-secondary text-dark slide-in from-bottom">
+                            <h3 class="text-start p-0 m-0"><span class="circle count" data-target="92">0</span>%</h3>
+                            <h6>Success Rate</h6>
                             <small>
                                 Cumulative 
                                 Success Rate 
                                 of Key Projects
                             </small>
                         </div>
-                    </div>
-                    <div class="row justify-content-center  my-1 slide-in from-left">
-                        <div class="col-md-4">
-                            <h3>Project</h3>
-                            <h2 class="text-end p-0 m-0 count" data-target="73">0</h2>
+                        <div class="col-md-5 my-1 rounded mx-md-1 bg-secondary text-dark slide-in from-bottom">
+                            <h3 class="text-start p-0 m-0"><span class="circle count" data-target="73">0</span></h3>
+                            <h6>Project</h6>
                             <small>
                                 Cumulative Key
                                 Projects Handled 
@@ -293,11 +243,9 @@
                                 Team
                             </small>
                         </div>
-                    </div>
-                    <div class="row  my-1 slide-in from-bottom">
-                        <div class="col-md-4">
-                            <h3>Experience</h3>
-                            <h2 class="text-end p-0 m-0 count" data-target="75">0 <span>+</span></h2>
+                        <div class="col-md-5 my-1 rounded mx-md-1 bg-secondary text-dark slide-in from-bottom">
+                            <h3 class="text-start p-0 m-0"><span class="circle count" data-target="75">0</span>+</h3>
+                            <h6>Experience</h6>
                             <small>
                                 Cumulative
                                 Years of Field
@@ -306,6 +254,15 @@
                                 Team
                             </small>
                         </div>
+                    </div>
+                </div>
+                <div class="col-md-7 meet-team-card">
+                    <div class="video-container slide-in from-right">
+                        <video id="myVideo" poster="thumbnail.jpg">
+                            <source src="video.mp4" type="video/mp4">
+                            Your browser does not support HTML video.
+                        </video>
+                        <div class="play-button"></div>
                     </div>
                 </div>
             </div>
@@ -462,29 +419,104 @@
         </section>
         <!-- service Section -->
 
-
         
         <!-- portfolio section -->
-        <div class="" id="portfoliotop">
-            <h2 class="mb-4 text-center">Our Portfolio</h2>
-            <div class="gallery">
-                <a href="./images/about 1.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                    <img src="./images/about 1.jpg" alt="Thumbnail">
-                </a>
-                <a href="./images/about 3.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                    <img src="./images/about 3.jpg" alt="Thumbnail">
-                </a>
-                <a href="./images/about 1.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                    <img src="./images/about 1.jpg" alt="Thumbnail">
-                </a>
-                <a href="./images/about 3.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                    <img src="./images/about 3.jpg" alt="Thumbnail">
-                </a>
+        <div id="portfoliotop"></div>
+        <div id="portfolioshadow">
+            <section class="portfolioimagesection container py-5">
+                <h2 class="py-3">Our Portfolio</h2>
+            <div class="row">
+                <div class="col-md-5 top">
+                    <div class="row">
+                        <div class="col-4 col-md-6 inner slide-in from-bottom">
+                            <a href="./images/about 1.jpg" data-lightbox="my-gallery" data-title="My Caption">
+                                <img src="./images/about 1.jpg" alt="Thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-4 col-md-2 inner slide-in from-bottom">
+                            <a href="./images/about 2.jpg" data-lightbox="my-gallery" data-title="My Caption">
+                                <img src="./images/about 2.jpg" alt="Thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-4 col-md-4 inner slide-in from-bottom">
+                            <a href="./images/about 3.jpg" data-lightbox="my-gallery" data-title="My Caption">
+                                <img src="./images/about 3.jpg" alt="Thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-4 col-md-4 inner slide-in from-bottom">
+                            <a href="./images/about 4.jpg" data-lightbox="my-gallery" data-title="My Caption">
+                                <img src="./images/about 4.jpg" alt="Thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-4 col-md-2 inner slide-in from-bottom">
+                            <a href="./images/about 1.jpg" data-lightbox="my-gallery" data-title="My Caption">
+                                <img src="./images/about 1.jpg" alt="Thumbnail">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 middle">
+                    <div class="row">                        
+                        <div class="col-4 col-md-4 inner slide-in from-bottom">
+                            <a href="./images/about 4.jpg" data-lightbox="my-gallery" data-title="My Caption">
+                                <img src="./images/about 4.jpg" alt="Thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-4 col-md-4 inner slide-in from-bottom">
+                            <a href="./images/about 1.jpg" data-lightbox="my-gallery" data-title="My Caption">
+                                <img src="./images/about 1.jpg" alt="Thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-4 col-md-4 inner slide-in from-bottom">
+                            <a href="./images/about 2.jpg" data-lightbox="my-gallery" data-title="My Caption">
+                                <img src="./images/about 2.jpg" alt="Thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-4 col-md-4 inner slide-in from-bottom">
+                            <a href="./images/about 3.jpg" data-lightbox="my-gallery" data-title="My Caption">
+                                <img src="./images/about 3.jpg" alt="Thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-4 col-md-4 inner slide-in from-bottom">
+                            <a href="./images/about 2.jpg" data-lightbox="my-gallery" data-title="My Caption">
+                                <img src="./images/about 2.jpg" alt="Thumbnail">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 bottom">
+                    <div class="row">
+                        <div class="col-4 col-md-2 inner slide-in from-bottom">
+                            <a href="./images/about 2.jpg" data-lightbox="my-gallery" data-title="My Caption">
+                                <img src="./images/about 2.jpg" alt="Thumbnail">
+                            </a>
+                        </div>                    
+                        <div class="col-4 col-md-2 inner slide-in from-bottom">
+                            <a href="./images/about 3.jpg" data-lightbox="my-gallery" data-title="My Caption">
+                                <img src="./images/about 3.jpg" alt="Thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-4 col-md-2 inner slide-in from-bottom">
+                            <a href="./images/about 4.jpg" data-lightbox="my-gallery" data-title="My Caption">
+                                <img src="./images/about 4.jpg" alt="Thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-4 col-md-2 inner slide-in from-bottom">
+                            <a href="./images/about 2.jpg" data-lightbox="my-gallery" data-title="My Caption">
+                                <img src="./images/about 2.jpg" alt="Thumbnail">
+                            </a>
+                        </div>
+                        <div class="col-4 col-md-2 inner slide-in from-bottom">
+                            <a href="./images/about 1.jpg" data-lightbox="my-gallery" data-title="My Caption">
+                                <img src="./images/about 1.jpg" alt="Thumbnail">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="text-center mt-5">
-                <a href="portfolio.html" class="btn btn-primary">View All Portfolio</a>
-            </div>
-        </div>        
+            <a href="portfolio.html" class="btn btn-primary mb-4">View More</a>
+            </section>  
+        </div>     
         <!-- portfolio section -->
 
         <!-- Testimonials -->
@@ -615,7 +647,8 @@
                     </div>
                 </div>
             </footer>
-            <div class="py-4 text-center footer">
+            <div class="py-4 text-center footer d-flex justify-content-around align-items-center">
+                <button id="themeToggle" class="btn ">🌙</button>
                 <p>
                     &copy; 2025 JPAenterprise - All rights reserved
                 </p>
@@ -839,157 +872,10 @@
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="./assets/swiper/swiper.js"></script>
     <script src="./assets/lightbox/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="./assets/main.js"></script>
+    <script src="./assets/loadcomponent.js"></script>
     <script>
-        var myVar;
-
-        function myFunction() {
-            myVar = setTimeout(showPage, 2000);
-        }
-
-        function showPage() {
-            document.getElementById("loader-board").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
-        } 
-
-
-        const swiper = new Swiper('.team-slider', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: true,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-nextt',
-                prevEl: '.swiper-button-prevv',
-            },
-            breakpoints: {
-                640: {
-                slidesPerView: 1,
-                },
-                768: {
-                slidesPerView: 2,
-                },
-                1024: {
-                slidesPerView: 3,
-                },
-            },
-        });
-
-        const swiper2 = new Swiper('.team-slider2', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: true,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-nextt',
-                prevEl: '.swiper-button-prevv',
-            },
-            breakpoints: {
-                640: {
-                slidesPerView: 1,
-                },
-                768: {
-                slidesPerView: 2,
-                },
-                1024: {
-                slidesPerView: 3,
-                },
-            },
-        });
-
-        // Pause autoplay on hover
-        const sliderEl = document.querySelector('.ccc');
-        const sliderE2 = document.querySelector('.bbb');
-
-        sliderEl.addEventListener('mouseenter', () => {
-            swiper.autoplay.stop();
-        });
-
-        sliderEl.addEventListener('mouseleave', () => {
-            swiper.autoplay.start();
-        });
-        sliderE2.addEventListener('mouseenter', () => {
-            swiper2.autoplay.stop();
-        });
-
-        sliderE2.addEventListener('mouseleave', () => {
-            swiper2.autoplay.start();
-        });
-
-        // number count
-        function animateCounter(el, duration = 3000) {
-        const target = +el.getAttribute('data-target');
-        const start = 0;
-        const stepTime = Math.max(Math.floor(duration / target), 10);
-        let current = start;
-
-        const counter = setInterval(() => {
-            current += 1;
-            el.textContent = current;
-
-            if (current >= target) {
-            el.textContent = target;
-            clearInterval(counter);
-            }
-        }, stepTime);
-        }
-
-        let hasAnimated = false;
-
-        function handleScrollCounter() {
-        const counters = document.querySelectorAll('.count');
-        const section = document.getElementById('stats');
-        const sectionTop = section.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        if (!hasAnimated && sectionTop < windowHeight - 100) {
-            counters.forEach(counter => animateCounter(counter));
-            hasAnimated = true;
-        }
-        }
-
-        window.addEventListener('scroll', handleScrollCounter);
-
-        // slide in
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target); // Animate once
-                }
-            });
-        }, {
-        threshold: 0.1
-        });
-
-        document.querySelectorAll('.slide-in').forEach(el => {
-        observer.observe(el);
-        });
-
-        lightbox.option({
-            'resizeDuration': 400,
-            'fadeDuration': 300,
-            'imageFadeDuration': 300,
-            'wrapAround': true,
-            'showImageNumberLabel': true,
-            'disableScrolling': false,
-            'albumLabel': "Image %1 of %2",
-            'alwaysShowNavOnTouchDevices': true,
-            'positionFromTop': 50
-        });
+        loadcomponents('topnav', 'components/topnav.html')
     </script>
 </body>
 </html>
