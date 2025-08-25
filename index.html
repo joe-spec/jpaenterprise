@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JPA Enterprise</title>
+    <title>JPA Enterprise Limited</title>
     <link rel="icon" href="./images/favicon.png" type="image/png">
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/main.css">
     <link rel="stylesheet" href="./assets/lightbox/dist/css/lightbox.min.css">
 </head>
-<body onload="myFunction()"  data-bs-spy="scroll" data-bs-target="#navscroll" data-bs-offset="0" tabindex="0">
+<body onload="myFunction()">
     <div id="loader-board">
          <div class="d-flex">
              <div class="j">J</div>
@@ -22,16 +22,14 @@
              <div class="enterprise d-flex"><p>E</p><p>N</p><p>T</p><p>E</p><p>R</p><p>P</p><p>R</p><p>I</p><p>S</p><p>E</p></div>
          </div>
     </div>
-   <div id="myDiv">
+    <div id="myDiv">
 
-        
     <!-- Top Nav -->
     <div id="topnav"></div>
      <!-- Top Nav -->
 
-
       <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navscroll">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navscroll">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img class="" src="./images/jpa logo.png" alt="logo">
@@ -41,11 +39,51 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link active" href="#myDiv">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#abouttop">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#servicetop">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfoliotop">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="servicedropdown" href="#">Services</a>
+                        <ul class="dropdown-menu border-0 bg-light" aria-label="#servicedropdown">
+                            <div class="container">
+                                <div class="row">
+                                    <a href="service.html" style="text-decoration: none; color: #000c2c; text-align: center;" class="h5">Our services</a>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <li class="mainservice"><a href="service.html" class="">Consulting</a>
+                                            <ul class="">
+                                                <li><a href="service.html#servicesTabs">Asset Management</a></li>
+                                                <li><a href="service.html#servicesTabs">Trade Finance</a></li>
+                                                <li><a href="service.html#servicesTabs">PPA (power, purchaase, aggrement)</a></li>
+                                            </ul>
+                                        </li>
+                                    </div>                                    
+                                    <div class="col-md-4">
+                                        <li class="mainservice"><a href="service.html" class="">Oil & Gas</a>
+                                            <ul class="">
+                                                <li><a href="service.html#servicesTabs">EP (exploration & production)</a></li>
+                                                <li><a href="service.html#servicesTabs">Mudula Refinaries</a></li>
+                                                <li><a href="service.html#servicesTabs">Petrol-chemical</a></li>
+                                                <li><a href="service.html#servicesTabs">Storage and Tankfarm</a></li>
+                                                <li><a href="service.html#servicesTabs">Import & Export</a> </li>
+                                            </ul>
+                                        </li>
+                                    </div>                                    
+                                    <div class="col-md-4">
+                                        <li class="mainservice"><a href="service.html">Logistics</a> 
+                                            <ul class="">
+                                                <li><a href="service.html#servicesTabs">Air</a></li>
+                                                <li><a href="service.html#servicesTabs">Marinetime</a></li>
+                                                <li><a href="service.html#servicesTabs">Land</a></li>
+                                            </ul>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <a href="#" class="quote-btn" data-bs-toggle="modal" data-bs-target="#getquotemodal">Get a Quote</a>
                 </ul>
             </div>
         </div>
@@ -53,526 +91,616 @@
     <!-- Navbar -->
 
     <div class="swiper team-slider"><div class="swiper-wrapper"></div>
-
-    <div class="" >
         <!-- Hero Section -->
-         <div></div>
         <section id="home" class="hero">
-            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="carousel" class="">
                 <div class="overlay"></div>
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./images/background/equipment.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption slide-in from-left">
-                            <h1>EQUIPMENT AND SPARE PARTS PROCUREMENT</h1>
-                            <p>Our global procurement division is designed and well-positioned to help our clients source the best quality heavy-duty machines and day-to-day work tools from reputable and approved partners across...</p>
-                            <a href="service.html" class="btn">Checkout Our Services</a>
-                        </div>
+                <div class="over">
+                        <video autoplay loop muted src="./images/videos/consulting.mp4"></video>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./images/background/about.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption slide-in from-bottom">
-                            <h1>INFRASTRUCTURE AND PIPELINE SECURITY</h1>
-                            <p>In Nigeria,the oil & gas sector has remained one of the most important sources of revenue and energy generation. With the increasing demand for Nigeria’s oil & gas products, it is absolutely imperative to...</p>
-                            <a href="service.html" class="btn">Checkout Our Services</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/about 3.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption slide-in from-left">
-                            <h1>ROAD CONSTRUCTION, FURNISHING, INTERLOCKINGAND REHABILITATION</h1>
-                            <p>At JPA, we offer top-tier road construction, furnishing, and rehabilitation services for highways, residential, commercial, and industrial purposes...</p>
-                            <a href="service.html" class="btn">Checkout Our Services</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/background/What are Hosted Services and How it Revolutionizes Modern Business.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption slide-in from-left">
-                            <h1>IT SERVICES</h1>
-                            <p>We understand that in today’s world, organizations and communities that will have both relevance and dominance are those that are not only focused on offering the best services, products,...</p>
-                            <a href="service.html" class="btn">Checkout Our Services</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/background/building.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption slide-in from-left">
-                            <h1>BUILDING DESIGN, CONSTRUCTION, MAINTENANCE AND RENOVATIONS</h1>
-                            <p>At JPA, we are focused on bridging the critical gaps within Africa’s real estate industry by offering development designs,...</p>
-                            <a href="service.html" class="btn">Checkout Our Services</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/background/office.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption slide-in from-left">
-                            <h1>OFFICE EQUIPMENT, SUPPLIES AND FURNITURE</h1>
-                            <p>For an organization like yours, whose day-to-day productivity is largely dependent on individuals’ and team performances, the availability and functionality of key resources cannot be...</p>
-                            <a href="service.html" class="btn">Checkout Our Services</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/background/Business IT Consulting_ Issues, Benefits, and When to Hire _ by It Services India _ Nov, 2022.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption slide-in from-left">
-                            <h1>CONSULTANCY AND PROJECT MANAGEMENT</h1>
-                            <ul>
-                                <li>COMMUNITY EMPOWERMENT & TRANSFORMATION</li>
-                                <li>PRODUCTIVITY, INNOVATION & GROWTH CONSULTING</li>
-                                <li>TECHNOLOGY CONSULTING</li>
-                                <li>SECURITY & SAFETY CONSULTING</li>
-                            </ul>
-                            <a href="service.html" class="btn">Checkout Our Services</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/background/Transportation and logistics_ _ Premium Photo.jpg" class="d-block w-100 img-fluid" alt="...">
-                        <div class="carousel-caption slide-in from-left">
-                            <h1>ONSHORE / OFFSHORE LOGISTICS AND SUPPORT SERVICES</h1>
-                            <p>We have the expertise, human capital, tools and technologies required to effectively respond to the administrative and...</p>
-                            <a href="service.html" class="btn">Checkout Our Services</a>
+                <div class="hero-inner">
+                    <div class="hero-caption">
+                        <h1>Innovative Solutions To <br> Move Your Business Forward.</h1>
+                        <p>We offer our services on <br> <Span id="typed" class="p"></Span></p>
+                        <div class="d-block d-md-flex">
+                            <a href="service.html" data-bs-toggle="modal" data-bs-target="#getquotemodal" class="btn-quote">Get a Quote</a>
+                            <a href="service.html" class="mt-5 mt-md-0 btn-learn-more">Learn More</a>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </section>
         <!-- Hero Section -->
-        
-        <!-- floating card section -->
-        <section class="floatingcard d-none d-md-flex"  id="stats">
-            <div class="floating slide-in from-bottom">
-                <div class="circle count" data-target="96">0</div>
-                <small class="lead">Competence</small>
-            </div>
-            <div class="floating slide-in from-bottom">
-                <div class="circle count" data-target="98">0</div>
-                <small class="lead">Service Quality</small>
-            </div>
-            <div class="floating slide-in from-bottom">
-                <div class="circle count" data-target="99">0</div>
-                <small class="lead">Reliability</small>
-            </div>
-            <div class="floating slide-in from-bottom">
-                <div class="circle count" data-target="93">0</div>
-                <small class="lead">Resoucefulness</small>
-            </div>
-        </section>
-        <!-- floating card section -->
 
-        <!-- About Us Section -->
-         <div id="abouttop"></div>
-        <section id="about" class="bg-light py-5">
+        <!-- overlay card section -->
+        <section class="card-overlay">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 image">
-                        <ul class="overflow-text slide-in from-left">
-                            <li><i class="fa fa-check"></i> Certified and experienced team.</li>
-                            <li><i class="fa fa-check"></i> On-time project delivery.</li>
-                            <li><i class="fa fa-check"></i> Eco-friendly construction methods.</li>
-                        </ul>
-                        <img src="./images/background/about2.jpg" alt="About Us" class="img-fluid rounded">
-                    </div>
-                    <div class="col-md-6 text slide-in from-right">
-                        <h2 class="mb-3">About US</h2>
-                        <h3 class="mb-3 lead">JPA Enterprise Limited</h3>
-                        <p> 
-                            JPA Enterprise Limited is a leading Oil & Gas, Logistics, Security,
-                            Construction, Information Technology, Real Estate, and Consulting firm with
-                            vast global experience in providing unequaled solutions to business and
-                            socio-economic problems. <br><br>
-                            JPA is established to support the growing demand for infrastructure
-                            development, maintenance, surveillance and security, engineering,
-                            construction, and IT services in diverse industries and critical sectors of
-                            Nigeria’s economy...
-                        </p>
-                        <a href="./about.html" class="btn btn-primary">Keep Reading</a>
+                <div class="row justify-content-center pt-md-5">
+                    <div class="col-md-6 text-center py-4 text-heading">
+                        <h2>From Transport, to Energy, to Strategy – We Move Business Forward.</h2>
+                        <p>We provide world-class logistics, reliable oil & gas solutions, and expert consulting 
+                            services tailored to drive growth and sustainability for your business.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- About Us Section -->
-
-        <!-- meet our team  -->
-        <section class="meet-team py-5">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-md-5 text">
-                    <h2 class=" slide-in from-left">Team Experience</h2>
-                    <p class="slide-in from-left">
-                        Our team is made up of seasoned, trained, certified, and highly
-                        experienced experts, professors, IT (artificial intelligence, networking,
-                        and software) engineers, HSE experts, specialized consultants, and
-                        project managers who have handled large and very complex projects
-                        for clients across different continents and industries. This vast pool of
-                        talents and technical resources makes it possible and easy for us to
-                        access modern tools and technologies, provide global standard
-                        solutions, and deliver unmatched results to our clients.
-                    </p>
-                    <div class="row justify-content-center my-1 slide-in from-right" id="stats">
-                        <div class="col-md-5 my-1 rounded mx-md-1 bg-secondary text-dark slide-in from-bottom">
-                            <h3 class="text-start p-0 m-0"><span class="circle count" data-target="92">0</span>%</h3>
-                            <h6>Success Rate</h6>
-                            <small>
-                                Cumulative 
-                                Success Rate 
-                                of Key Projects
-                            </small>
-                        </div>
-                        <div class="col-md-5 my-1 rounded mx-md-1 bg-secondary text-dark slide-in from-bottom">
-                            <h3 class="text-start p-0 m-0"><span class="circle count" data-target="73">0</span></h3>
-                            <h6>Project</h6>
-                            <small>
-                                Cumulative Key
-                                Projects Handled 
-                                by Management
-                                Team
-                            </small>
-                        </div>
-                        <div class="col-md-5 my-1 rounded mx-md-1 bg-secondary text-dark slide-in from-bottom">
-                            <h3 class="text-start p-0 m-0"><span class="circle count" data-target="75">0</span>+</h3>
-                            <h6>Experience</h6>
-                            <small>
-                                Cumulative
-                                Years of Field
-                                Experience of 
-                                Management
-                                Team
-                            </small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-7 meet-team-card">
-                    <div class="video-container slide-in from-right">
-                        <video id="myVideo" poster="thumbnail.jpg">
-                            <source src="video.mp4" type="video/mp4">
-                            Your browser does not support HTML video.
-                        </video>
-                        <div class="play-button"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </section>
-        <!-- meet our team  -->
-
-        <!-- Team Member Section -->
-        <section class="team-section">
-            <h2>Meet Our Team</h2>
-            <div class="swiper team-slider">
-                <div class="swiper-wrapper ccc">
-                    <div class="swiper-slide team-member">
-                        <img src="./images/Businessman Avatar Vector PNG Images, Businessman User Avatar Wearing Suit With Red Tie, Avatar, Businessman Avatar, User Avatar PNG Image For Free Download.jpg" alt="JAMES AMEH">
-                        <h3>JAMES AMEH</h3>
-                        <p class="role">CHIEF EXECUTIVE OFFICER</p>
-                        <div class="hidebtn">
-                            <p class="bio text-light py-3">
-                                James Ameh is a very sound and well-respected consultant with over 15 years of global...
-                            </p>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#james">View Complete Bio</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide team-member">
-                        <img src="./images/Businessman Avatar Vector PNG Images, Businessman User Avatar Wearing Suit With Red Tie, Avatar, Businessman Avatar, User Avatar PNG Image For Free Download.jpg" alt="OBAFEMISAMUEL">
-                        <h3>OBAFEMI SAMUEL</h3>
-                        <p class="role">BUSINESS INTELLIGENCE/OPERATIONS MANAGER</p>
-                        <div class="hidebtn">
-                            <p class="bio text-light py-3">
-                                Obafemi is a distinction graduate of Business Administration from SMC University...
-                            </p>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Obafemi">View Complete Bio</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide team-member">
-                        <img src="./images/Businessman Avatar Vector PNG Images, Businessman User Avatar Wearing Suit With Red Tie, Avatar, Businessman Avatar, User Avatar PNG Image For Free Download.jpg" alt="ISAH">
-                        <h3> ISAH (CHARLES) SAIDU</h3>
-                        <p class="role">GLOBAL SOFTWARE & ARTIFICIAL INTELLIGENCE DIRECTOR</p>
-                        <div class="hidebtn">
-                            <p class="bio text-light py-3">
-                                Isah is an Experienced researcher/developer with a demonstrated history of...
-                            </p>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ISAH">View Complete Bio</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide team-member">
-                        <img src="./images/Businessman Avatar Vector PNG Images, Businessman User Avatar Wearing Suit With Red Tie, Avatar, Businessman Avatar, User Avatar PNG Image For Free Download.jpg" alt="EBENEZER">
-                        <h3>EBENEZER JONATHAN</h3>
-                        <p class="role">GLOBAL WEB & UI/UX DIRECTOR</p>
-                        <div class="hidebtn">
-                            <p class="bio text-light py-3">
-                                Ebenezer is a full-stack web and software developer with over 8 years of field...
-                            </p>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EBENEZER">View Complete Bio</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide team-member">
-                        <img src="./images/Businessman Avatar Vector PNG Images, Businessman User Avatar Wearing Suit With Red Tie, Avatar, Businessman Avatar, User Avatar PNG Image For Free Download.jpg" alt="ADEYEMI">
-                        <h3>ADEYEMI TUGBOGBO</h3>
-                        <p class="role">INFORMATION TECHNOLOGY & COMMUNICATIONS MANAGER</p>
-                        <div class="hidebtn">
-                            <p class="bio text-light py-3">
-                                Adeyemi is a seasoned communications expert with deep knowledge of computer...
-                            </p>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ADEYEMI">View Complete Bio</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide team-member">
-                        <img src="./images/Businessman Avatar Vector PNG Images, Businessman User Avatar Wearing Suit With Red Tie, Avatar, Businessman Avatar, User Avatar PNG Image For Free Download.jpg" alt="TOLUWA">
-                        <h3> TOLUWA ATERE</h3>
-                        <p class="role">SURVEILLANCECONSULTANT/ HSE&PROJECTMANAGER</p>
-                        <div class="hidebtn">
-                            <p class="bio text-light py-3">
-                                Toluwa is a highly competent IT and surveillance professional with over 12 years of field...
-                            </p>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#TOLUWA">View Complete Bio</button>
-                        </div>
-                    </div>
-                    <div class="swiper-slide team-member">
-                        <img src="./images/Businessman Avatar Vector PNG Images, Businessman User Avatar Wearing Suit With Red Tie, Avatar, Businessman Avatar, User Avatar PNG Image For Free Download.jpg" alt="ACHILLE">
-                        <h3>ACHILLE NGUEMNANG</h3>
-                        <p class="role">GLOBAL ENTERPRISE SOLUTION DIRECTOR</p>
-                        <div class="hidebtn">
-                            <p class="bio text-light py-3">
-                                Achille is an experienced Solution Architect with a demonstrated history of working in...
-                            </p>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ACHILLE">View Complete Bio</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-            <!-- Navigation Arrows -->
-            <div class="swiper-button-prevv d-none d-md-block"><i class="fa fa-arrow-left"></i></div>
-            <div class="swiper-button-nextt d-none d-md-block"><i class="fa fa-arrow-right"></i></div>
-        </section>
-        <!-- Team Member Section -->
-
-        <!-- service Section -->
-         <div id="servicetop"></div>
-        <section id="service" class="bg-light py-5">
-            <div class="container">
-                <div class="row align-items-center">
+                <div class="row servicescards py-3">
                     <div class="col-md-4">
-                        <h2>Our Services</h2>
-                        <p>
-                            We offer a versatile fleet of specialized off shore services to facilitate workplace
-                            conduciveness, operational effectiveness, and safety for players within the oil
-                            and gas sector, and beyond. Our core areas of expertise span numerous
-                            industries and sub-sectors. To mention a few, our specialization includes, but
-                            not limited to the following:
-                        </p>
-                        <a href="service.html" class="btn btn-primary mb-4">Keep Reading</a>
+                        <div class="card shadow my-3 my-md-0">
+                            <div class="card-header border-0">
+                                <h2><i class="fa fa-chart-line"></i> Consulting</h2>
+                                <p>Empowering businesses with expert guidance in asset management, trade finance, and Power Purchase Agreements.</p>
+                            </div>
+                            <div class="cardbody">
+                                <img class="img-fluid" src="./images/background/consulting.jpg" alt="">
+                            </div>
+                            <div class="card-footer">
+                                <a href="service.html">Discover More <i class="fa fa-arrow-right rounded-circle p-2 px-3 d-flex justify-content-center"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <div class="row justify-content-center">
-                            <div class="col-11 col-md-5 col-lg-3 m-3 shadow slide-in from-bottom">
-                                <div class="service-icon"><i class="fa fa-tools"></i></div>
-                                EQUIPMENT AND SPARE PARTS PROCUREMENT
+                    <div class="col-md-4">
+                        <div class="card shadow my-3 my-md-0">
+                            <div class="card-header border-0">
+                                <h2><i class="fa fa-oil-well"></i> Oil & Gas</h2>
+                                <p>From exploration to refining and global trade, we deliver innovative oil and gas solutions accross the world.</p>
                             </div>
-                            <div class="col-11 col-md-5 col-lg-3 m-3 shadow slide-in from-right">
-                                <div class="service-icon"><i class="fa fa-pipeline"></i></div>
-                                INFRASTRUCTURE AND PIPELINE SECURITY
+                            <div class="cardbody">
+                                <img class="img-fluid" src="./images/background/oil and gas.jpg" alt="">
                             </div>
-                            <div class="col-11 col-md-5 col-lg-3 m-3 shadow slide-in from-left">
-                                <div class="service-icon"><i class="fa fa-road"></i></div>
-                                ROAD CONSTRUCTION, FURNISHING, INTERLOCKINGAND REHABILITATION
+                            <div class="card-footer">
+                                <a href="service.html">Discover More <i class="fa fa-arrow-right rounded-circle p-2 px-3 d-flex justify-content-center"></i></a>
+                            </div>                                
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card shadow my-3 my-md-0">
+                            <div class="card-header border-0">
+                                <h2><i class="fa fa-ship"></i> Logistics</h2>
+                                <p>With speed, safety, and reliability, our logistics services ensure your goods move seamlessly across borders.</p>
                             </div>
-                            <div class="col-11 col-md-5 col-lg-3 m-3 shadow slide-in from-left">
-                                <div class="service-icon"><i class="fa fa-computer"></i></div>
-                                IT SERVICES
+                            <div class="cardbody">
+                                <img class="img-fluid" src="./images/background/Transportation and logistics_ _ Premium Photo.jpg" alt="">
                             </div>
-                            <div class="col-11 col-md-5 col-lg-3 m-3 shadow slide-in from-bottom">
-                                <div class="service-icon"><i class="fa fa-building"></i></div>
-                                BUILDING DESIGN, CONSTRUCTION, MAINTENANCE AND RENOVATIONS
+                            <div class="card-footer">
+                                <a href="service.html">Discover More <i class="fa fa-arrow-right rounded-circle p-2 px-3 d-flex justify-content-center"></i></a>
+                            </div>                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row whatweoffer px-5">
+                <div class="overlay"></div>
+                <div class="row align-items-center whatweoffer-header">
+                    <div class="col-md-7">
+                        <h2>What We Offer</h2>
+                        <p>With trusted expertise across logistics, oil & gas, and consulting, we deliver seamless solutions that help you achieve success globally.</p>
+                    </div>
+                    <div class="col-md-5 d-flex justify-content-end">
+                        <a href="service.html">Discover More <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="row subservice">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 col-md-4 py-3 slide-in from-bottom">
+                            <div>
+                                <i class="fa fa-coins"></i>
                             </div>
-                            <div class="col-11 col-md-5 col-lg-3 m-3 shadow slide-in from-right">
-                                <div class="service-icon"><i class="fa fa-office"></i></div>
-                                OFFICE EQUIPMENT, SUPPLIES AND FURNITURE
+                            <div>
+                                <h4>Asset Management</h4>
+                                <p>Helping businesses maximize the value of their assets through smart investment and strategic management.</p>
                             </div>
-                            <div class="col-11 col-md-5 col-lg-3 m-3 shadow slide-in from-bottom">
-                                <div class="service-icon"><i class="fa fa-portfolio"></i></div>
-                                CONSULTANCY AND PROJECT MANAGEMENT
+                        </div>
+                        <div class="col-sm-6 col-md-4 py-3 slide-in from-bottom">
+                            <div>
+                                <i class="fa fa-handshake"></i>
                             </div>
-                            <div class="col-11 col-md-5 col-lg-3 m-3 shadow slide-in from-right py-4">
-                                <div class="service-icon"><i class="fa fa-car"></i></div>
-                                ONSHORE / OFFSHORE LOGISTICS AND SUPPORT SERVICES
+                            <div>
+                                <h4>Trade Finance</h4>
+                                <p>Providing financial solutions that support global trade, ensuring smooth transactions and growth opportunities.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 py-3 slide-in from-bottom">
+                            <div>
+                                <i class="fa fa-file-contract"></i>
+                            </div>
+                            <div>
+                                <h4>PPA (Power Purchase Agreements)</h4>
+                                <p>Expert advisory on structuring and negotiating PPAs to secure sustainable and profitable energy deals.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 py-3 slide-in from-bottom">
+                            <div>
+                                <i class="fa fa-plane"></i>
+                            </div>
+                            <div>
+                                <h4>Air</h4>
+                                <p>Fast, reliable air freight solutions designed to move your goods across borders with speed and security.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 py-3 slide-in from-bottom">
+                            <div>
+                                <i class="fa fa-ship"></i>
+                            </div>
+                            <div>
+                                <h4>Maritime</h4>
+                                <p>Seamless ocean freight services connecting global trade routes with efficiency and reliability.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 py-3 slide-in from-bottom">
+                            <div>
+                                <i class="fa fa-truck"></i>
+                            </div>
+                            <div>
+                                <h4>Land</h4>
+                                <p>Comprehensive road transport solutions ensuring timely deliveries across cities and regions.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 py-3 slide-in from-bottom">
+                            <div>
+                                <i class="fa fa-digging"></i>
+                            </div>
+                            <div>
+                                <h4>EP (Exploration & Production)</h4>
+                                <p>Expertise in exploration and production to unlock energy resources responsibly and sustainably.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 py-3 slide-in from-bottom">
+                            <div>
+                                <i class="fa fa-industry"></i>
+                            </div>
+                            <div>
+                                <h4>Modular Refineries</h4>
+                                <p>Flexible, cost-effective modular refinery solutions tailored to meet energy demands efficiently.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 py-3 slide-in from-bottom">
+                            <div>
+                                <i class="fa fa-flask"></i>
+                            </div>
+                            <div>
+                                <h4>Petrochemical</h4>
+                                <p>Delivering high-quality petrochemical products that power industries and everyday life.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 py-3 slide-in from-bottom">
+                            <div>
+                                <i class="fa fa-oil-well"></i>
+                            </div>
+                            <div>
+                                <h4>Storage and Tank Farm</h4>
+                                <p>Secure, modern storage facilities designed for safe handling and preservation of oil products.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 py-3 slide-in from-bottom">
+                            <div>
+                                <i class="fa fa-exchange-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Import & Export of Oil Products</h4>
+                                <p>Reliable global trade solutions for importing and exporting petroleum products with compliance and efficiency.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- service Section -->
-
         
-        <!-- portfolio section -->
-        <div id="portfoliotop"></div>
-        <div id="portfolioshadow">
-            <section class="portfolioimagesection container py-5">
-                <h2 class="py-3">Our Portfolio</h2>
-            <div class="row">
-                <div class="col-md-5 top">
-                    <div class="row">
-                        <div class="col-4 col-md-6 inner slide-in from-bottom">
-                            <a href="./images/about 1.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                                <img src="./images/about 1.jpg" alt="Thumbnail">
-                            </a>
+        <!-- floating card section -->
+        <div class="py-5 text-center mainfloating">
+            <h2>Best Reason To Choose <br> Our Services</h2>
+            <section class="row floatingcard d-md-flex"  id="stats">
+                <div class="col-6 col-md-3 p-2 floating slide-in from-bottom">
+                    <i class="fa fa-chalkboard-teacher"></i>
+                    <div class="count" data-target="96">0</div>
+                    <small class="lead">Competence</small>
+                </div>
+                <div class="col-6 col-md-3 p-2 floating slide-in from-bottom">
+                    <i class="fa fa-award"></i>
+                    <div class="count" data-target="98">0</div>
+                    <small class="lead">Service Quality</small>
+                </div>
+                <div class="col-6 col-md-3 p-2 floating slide-in from-bottom">
+                    <i class="fa fa-shield-alt"></i>
+                    <div class="count" data-target="99">0</div>
+                    <small class="lead">Reliability</small>
+                </div>
+                <div class="col-6 col-md-3 p-2 floating slide-in from-bottom">
+                    <i class="fa fa-lightbulb"></i>
+                    <div class="count" data-target="93">0</div>
+                    <small class="lead">Resoucefulness</small>
+                </div>
+            </section>
+        </div>
+        <!-- floating card section -->
+
+        <!-- we have donr the work section -->
+        <section class="workdone">
+            <div class="container py-5">
+                <div class="row justify-content-around">
+                    <div class="row align-items-center workdone-header pt-3">
+                        <div class="col-md-7">
+                            <h2>We Have Done The Works, <br> Recent  Case Studies</h2>
                         </div>
-                        <div class="col-4 col-md-2 inner slide-in from-bottom">
-                            <a href="./images/about 2.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                                <img src="./images/about 2.jpg" alt="Thumbnail">
-                            </a>
-                        </div>
-                        <div class="col-4 col-md-4 inner slide-in from-bottom">
-                            <a href="./images/about 3.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                                <img src="./images/about 3.jpg" alt="Thumbnail">
-                            </a>
-                        </div>
-                        <div class="col-4 col-md-4 inner slide-in from-bottom">
-                            <a href="./images/about 4.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                                <img src="./images/about 4.jpg" alt="Thumbnail">
-                            </a>
-                        </div>
-                        <div class="col-4 col-md-2 inner slide-in from-bottom">
-                            <a href="./images/about 1.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                                <img src="./images/about 1.jpg" alt="Thumbnail">
-                            </a>
+                        <div class="col-md-5 d-flex justify-content-end">
+                            <a href="project.html">Discover More <i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 middle">
-                    <div class="row">                        
-                        <div class="col-4 col-md-4 inner slide-in from-bottom">
-                            <a href="./images/about 4.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                                <img src="./images/about 4.jpg" alt="Thumbnail">
-                            </a>
+                    <div class="row workcard pt-3">
+                        <div class="col-sm-6 col-md-4 col-lg-3 cards py-2 slide-in from-bottom">
+                            <div class="overlay"></div>
+                            <img src="./images/works/w10.PNG" alt="">
+                            <p class="work-title">Data cables installation</p>
                         </div>
-                        <div class="col-4 col-md-4 inner slide-in from-bottom">
-                            <a href="./images/about 1.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                                <img src="./images/about 1.jpg" alt="Thumbnail">
-                            </a>
+                        <div class="col-sm-6 col-md-4 col-lg-3 cards py-2 slide-in from-bottom">
+                            <div class="overlay"></div>
+                            <img src="./images/works/w5.PNG" alt="">
+                            <p class="work-title">Oil transportation</p>
                         </div>
-                        <div class="col-4 col-md-4 inner slide-in from-bottom">
-                            <a href="./images/about 2.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                                <img src="./images/about 2.jpg" alt="Thumbnail">
-                            </a>
+                        <div class="col-sm-6 col-md-4 col-lg-3 cards py-2 slide-in from-bottom">
+                            <div class="overlay"></div>
+                            <img src="./images/works/w2.PNG" alt="">
+                            <p class="work-title">Road construction</p>
                         </div>
-                        <div class="col-4 col-md-4 inner slide-in from-bottom">
-                            <a href="./images/about 3.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                                <img src="./images/about 3.jpg" alt="Thumbnail">
-                            </a>
-                        </div>
-                        <div class="col-4 col-md-4 inner slide-in from-bottom">
-                            <a href="./images/about 2.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                                <img src="./images/about 2.jpg" alt="Thumbnail">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 bottom">
-                    <div class="row">
-                        <div class="col-4 col-md-2 inner slide-in from-bottom">
-                            <a href="./images/about 2.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                                <img src="./images/about 2.jpg" alt="Thumbnail">
-                            </a>
-                        </div>                    
-                        <div class="col-4 col-md-2 inner slide-in from-bottom">
-                            <a href="./images/about 3.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                                <img src="./images/about 3.jpg" alt="Thumbnail">
-                            </a>
-                        </div>
-                        <div class="col-4 col-md-2 inner slide-in from-bottom">
-                            <a href="./images/about 4.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                                <img src="./images/about 4.jpg" alt="Thumbnail">
-                            </a>
-                        </div>
-                        <div class="col-4 col-md-2 inner slide-in from-bottom">
-                            <a href="./images/about 2.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                                <img src="./images/about 2.jpg" alt="Thumbnail">
-                            </a>
-                        </div>
-                        <div class="col-4 col-md-2 inner slide-in from-bottom">
-                            <a href="./images/about 1.jpg" data-lightbox="my-gallery" data-title="My Caption">
-                                <img src="./images/about 1.jpg" alt="Thumbnail">
-                            </a>
+                        <div class="col-sm-6 col-md-4 col-lg-3 cards py-2 slide-in from-bottom">
+                            <div class="overlay"></div>
+                            <img src="./images/works/w9.PNG" alt="">
+                            <p class="work-title">Installation of network cables</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <a href="portfolio.html" class="btn btn-primary mb-4">View More</a>
-            </section>  
-        </div>     
-        <!-- portfolio section -->
+        </section>
+        <!-- we have donr the work section -->
+
+        <!-- we can grow your business -->
+        <section class="py-5 growbusiness">
+            <div class="overlay"></div>
+            <div class="mainrow row align-items-center justify-content-between p-5">
+                <div class="col-md-6 slide-in from-left" id="stats">
+                    <h2 class="p-3">Let's Help You To <br> Grow Your Business</h2>
+                    <div class="row my-2">
+                        <div class="col d-flex align-items-center">
+                            <div class="col-3 p-3">
+                                <h3 class="text-start p-0 m-0"><span class="circle count" data-target="92">0</span>%</h3>
+                                <h6 class="">Success Rate</h6>
+                            </div>
+                            <div class="col-9 p-3">
+                                <p>We take pride in delivering excellence with a proven success rate of over 92% across all our solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col d-flex align-items-center">
+                            <div class="col-3 p-3">
+                                <h3 class="text-start p-0 m-0"><span class="circle count" data-target="73">0</span>+</h3>
+                                <h6 class="">Project</h6>
+                            </div>
+                            <div class="col-9 p-3">
+                                <p>From small businesses to large enterprises, we have successfully executed dozens of impactful projects across different industries.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col d-flex align-items-center">
+                            <div class="col-3 p-3">
+                                <h3 class="text-start p-0 m-0"><span class="circle count" data-target="75">0</span>+</h3>
+                                <h6 class="">Experience</h6>
+                            </div>
+                            <div class="col-9 p-3">
+                                <p>With years of hands-on experience, our team brings deep technical expertise and industry knowledge.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form action="https://formspree.io/f/xanbalkp" method="post" class=" slide-in from-right">
+                        <h1>Request a Quote</h1>
+                        <!-- <p class="mt-4">Feel free to contact us anytime, we'll get back to you as soon as we can.</p> -->
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group my-2 my-md-0">
+                                    <input type="text" id="name" placeholder="Your Name *" name="name" required class="form-control rounded-0">
+                                    <label for="name"></label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group my-2 my-md-0">
+                                    <input type="email" id="email" style="background: transparent; box-shadow: none;" placeholder="Your Email *" name="email" required class="form-control rounded-0">
+                                    <label for="email"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group my-2 my-md-0">
+                                    <input type="text" id="phone" style="background: transparent; box-shadow: none;" placeholder="Phone Number" name="phone" class="form-control rounded-0">
+                                    <label for="phone"></label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group my-2 my-md-0">
+                                    <select id="country" name="country" class="form-control rounded-0" required>
+                                        <option value="">-- Select Country --</option>
+                                        <option value="AF">Afghanistan</option>
+                                        <option value="AL">Albania</option>
+                                        <option value="DZ">Algeria</option>
+                                        <option value="AS">American Samoa</option>
+                                        <option value="AD">Andorra</option>
+                                        <option value="AO">Angola</option>
+                                        <option value="AR">Argentina</option>
+                                        <option value="AM">Armenia</option>
+                                        <option value="AU">Australia</option>
+                                        <option value="AT">Austria</option>
+                                        <option value="AZ">Azerbaijan</option>
+                                        <option value="BH">Bahrain</option>
+                                        <option value="BD">Bangladesh</option>
+                                        <option value="BB">Barbados</option>
+                                        <option value="BE">Belgium</option>
+                                        <option value="BJ">Benin</option>
+                                        <option value="BT">Bhutan</option>
+                                        <option value="BO">Bolivia</option>
+                                        <option value="BW">Botswana</option>
+                                        <option value="BR">Brazil</option>
+                                        <option value="BN">Brunei</option>
+                                        <option value="BG">Bulgaria</option>
+                                        <option value="BF">Burkina Faso</option>
+                                        <option value="BI">Burundi</option>
+                                        <option value="KH">Cambodia</option>
+                                        <option value="CM">Cameroon</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="CV">Cape Verde</option>
+                                        <option value="TD">Chad</option>
+                                        <option value="CL">Chile</option>
+                                        <option value="CN">China</option>
+                                        <option value="CO">Colombia</option>
+                                        <option value="KM">Comoros</option>
+                                        <option value="CG">Congo</option>
+                                        <option value="CR">Costa Rica</option>
+                                        <option value="HR">Croatia</option>
+                                        <option value="CU">Cuba</option>
+                                        <option value="CY">Cyprus</option>
+                                        <option value="CZ">Czech Republic</option>
+                                        <option value="DK">Denmark</option>
+                                        <option value="DJ">Djibouti</option>
+                                        <option value="DO">Dominican Republic</option>
+                                        <option value="EC">Ecuador</option>
+                                        <option value="EG">Egypt</option>
+                                        <option value="SV">El Salvador</option>
+                                        <option value="EE">Estonia</option>
+                                        <option value="ET">Ethiopia</option>
+                                        <option value="FI">Finland</option>
+                                        <option value="FR">France</option>
+                                        <option value="GA">Gabon</option>
+                                        <option value="GM">Gambia</option>
+                                        <option value="GE">Georgia</option>
+                                        <option value="DE">Germany</option>
+                                        <option value="GH">Ghana</option>
+                                        <option value="GR">Greece</option>
+                                        <option value="GD">Grenada</option>
+                                        <option value="GT">Guatemala</option>
+                                        <option value="GN">Guinea</option>
+                                        <option value="GY">Guyana</option>
+                                        <option value="HT">Haiti</option>
+                                        <option value="HN">Honduras</option>
+                                        <option value="HK">Hong Kong</option>
+                                        <option value="HU">Hungary</option>
+                                        <option value="IN">India</option>
+                                        <option value="ID">Indonesia</option>
+                                        <option value="IR">Iran</option>
+                                        <option value="IQ">Iraq</option>
+                                        <option value="IE">Ireland</option>
+                                        <option value="IL">Israel</option>
+                                        <option value="IT">Italy</option>
+                                        <option value="JM">Jamaica</option>
+                                        <option value="JP">Japan</option>
+                                        <option value="JO">Jordan</option>
+                                        <option value="KZ">Kazakhstan</option>
+                                        <option value="KE">Kenya</option>
+                                        <option value="KR">Korea, South</option>
+                                        <option value="KW">Kuwait</option>
+                                        <option value="KG">Kyrgyzstan</option>
+                                        <option value="LA">Laos</option>
+                                        <option value="LV">Latvia</option>
+                                        <option value="LB">Lebanon</option>
+                                        <option value="LR">Liberia</option>
+                                        <option value="LY">Libya</option>
+                                        <option value="LT">Lithuania</option>
+                                        <option value="LU">Luxembourg</option>
+                                        <option value="MG">Madagascar</option>
+                                        <option value="MW">Malawi</option>
+                                        <option value="MY">Malaysia</option>
+                                        <option value="MV">Maldives</option>
+                                        <option value="ML">Mali</option>
+                                        <option value="MT">Malta</option>
+                                        <option value="MR">Mauritania</option>
+                                        <option value="MU">Mauritius</option>
+                                        <option value="MX">Mexico</option>
+                                        <option value="MD">Moldova</option>
+                                        <option value="MC">Monaco</option>
+                                        <option value="MN">Mongolia</option>
+                                        <option value="ME">Montenegro</option>
+                                        <option value="MA">Morocco</option>
+                                        <option value="MZ">Mozambique</option>
+                                        <option value="NA">Namibia</option>
+                                        <option value="NP">Nepal</option>
+                                        <option value="NL">Netherlands</option>
+                                        <option value="NZ">New Zealand</option>
+                                        <option value="NI">Nicaragua</option>
+                                        <option value="NE">Niger</option>
+                                        <option value="NG">Nigeria</option>
+                                        <option value="NO">Norway</option>
+                                        <option value="OM">Oman</option>
+                                        <option value="PK">Pakistan</option>
+                                        <option value="PA">Panama</option>
+                                        <option value="PG">Papua New Guinea</option>
+                                        <option value="PY">Paraguay</option>
+                                        <option value="PE">Peru</option>
+                                        <option value="PH">Philippines</option>
+                                        <option value="PL">Poland</option>
+                                        <option value="PT">Portugal</option>
+                                        <option value="QA">Qatar</option>
+                                        <option value="RO">Romania</option>
+                                        <option value="RU">Russia</option>
+                                        <option value="RW">Rwanda</option>
+                                        <option value="SA">Saudi Arabia</option>
+                                        <option value="SN">Senegal</option>
+                                        <option value="RS">Serbia</option>
+                                        <option value="SC">Seychelles</option>
+                                        <option value="SG">Singapore</option>
+                                        <option value="SK">Slovakia</option>
+                                        <option value="SI">Slovenia</option>
+                                        <option value="ZA">South Africa</option>
+                                        <option value="ES">Spain</option>
+                                        <option value="LK">Sri Lanka</option>
+                                        <option value="SD">Sudan</option>
+                                        <option value="SE">Sweden</option>
+                                        <option value="CH">Switzerland</option>
+                                        <option value="SY">Syria</option>
+                                        <option value="TW">Taiwan</option>
+                                        <option value="TZ">Tanzania</option>
+                                        <option value="TH">Thailand</option>
+                                        <option value="TG">Togo</option>
+                                        <option value="TT">Trinidad and Tobago</option>
+                                        <option value="TN">Tunisia</option>
+                                        <option value="TR">Turkey</option>
+                                        <option value="UG">Uganda</option>
+                                        <option value="UA">Ukraine</option>
+                                        <option value="AE">United Arab Emirates</option>
+                                        <option value="GB">United Kingdom</option>
+                                        <option value="US">United States</option>
+                                        <option value="UY">Uruguay</option>
+                                        <option value="UZ">Uzbekistan</option>
+                                        <option value="VE">Venezuela</option>
+                                        <option value="VN">Vietnam</option>
+                                        <option value="YE">Yemen</option>
+                                        <option value="ZM">Zambia</option>
+                                        <option value="ZW">Zimbabwe</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group my-2 my-md-0">
+                                    <!-- <input type="text" id="servicetype" style="background: transparent; box-shadow: none;" placeholder="Service Type *" name="servicetype" required class="form-control rounded-0"> -->
+                                    <select id="servicetype2" name="servicetype" style="background: transparent; box-shadow: none;" class="form-control rounded-0" required>
+                                        <option value="">-- Select a Service --</option>
+                                        <option value="logistics">Logistics</option>
+                                        <option value="oilgas">Oil and Gas</option>
+                                        <option value="consulting">Consulting</option>
+                                    </select>
+                                    <label for="servicetype2"></label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group my-2 my-md-0">
+                                    <!-- <input type="text" id="budget" style="background: transparent; box-shadow: none;" placeholder="Estimated Budget *" name="budget" required class="form-control rounded-0"> -->
+                                    <select id="subservice2" name="subservice" style="background: transparent; box-shadow: none;" class="form-control rounded-0" required>
+                                        <option value="">-- Select a Sub-Service --</option>
+                                    </select>
+                                    <label for="subservice2"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group my-2 my-md-0">
+                                    <input type="text" id="projecttime" style="background: transparent; box-shadow: none;" placeholder="Maximum Time for Project *" name="projecttime" required class="form-control rounded-0">
+                                    <label for="projecttime"></label>
+                                </div>
+                            </div>                        
+                            <div class="col-6">
+                                <div class="form-group my-2 my-md-0">
+                                    <input type="text" id="budget" style="background: transparent; box-shadow: none;" placeholder="Estimated Budget *" name="budget" required class="form-control rounded-0">
+                                    <label for="budget"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group my-2 my-md-0">
+                            <textarea cols="" rows="1" id="message" style="background: transparent; box-shadow: none;" placeholder="Message" name="message" required class="form-control rounded-0"></textarea>
+                            <label for="message"></label>
+                        </div>
+                        <input type="submit" value="Send" class="btn btn-primary form-control rounded-0 mt-4" >
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- we can grow your business -->
+
+            <!-- Team Member Section -->
+        <section class="team-section py-4 py-md-5">
+            <div class="container">
+                <h2 class="py-3">Meet Our Team</h2>
+                <div class="row">
+                    <div class="col-lg-6 my-4">
+                        <div class="row align-items-center">
+                            <div class="col-sm-4 text-center imgcontainer">
+                                <img class="rounded" src="./images/background/board directors.jpg" alt="">
+                            </div>
+                            <div class="col-sm-8 text-start my-4 px-3">
+                                <h3>Our Board of Directors</h3>
+                                <p>Our Board of Directors bring a diverse mix of knowledge, experience proficiency 
+                                    and expertise, which is instrumental in guiding our strategic decisions, fostering innovation, 
+                                    and driving sustainable growth amidst a rapidly changing energy landscape.
+                                </p>
+                                <a href="meet_directors.html" class="d-flex align-items-center">Meet Our Directors <i class="fa fa-arrow-right rounded-circle p-2 px-3 d-flex justify-content-center"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 my-4">
+                        <div class="row align-items-center">
+                            <div class="col-sm-4 text-center imgcontainer">
+                                <img class="rounded" src="./images/background//executive managers.jpg" alt="">
+                            </div>
+                            <div class="col-sm-8 text-start my-4 px-3">
+                                <h3>Our Executive Management</h3>
+                                <p>Meet our exceptional Executive Management Team, driving innovation, strategy, and success with 
+                                    their wealth of experience and visionary leadership.
+                                </p>
+                                <a href="meet_management.html" class="d-flex align-items-center">Meet Our Management <i class="fa fa-arrow-right rounded-circle p-2 px-3 d-flex justify-content-center"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team Member Section -->
 
         <!-- Testimonials -->
-        <div class="container mt-5" id="test">
-            <div class="row">
-                <div class="col-md-8">
-                    <h2 class="mb-4">What Our Clients Say</h2>
-                    <div class="swiper team-slider2 bbb">
-                        <div class="swiper-wrapper mb-5">
-                            <div class="swiper-slide team-member">
-                                <blockquote class="blockquote">
-                                    <p>"Excellent work and professional team! Our office space was delivered ahead of schedule and looks stunning."</p>
-                                    <footer class="blockquote-footer">Sarah M., <cite title="Company">UrbanTech Ltd.</cite></footer>
-                                </blockquote>
-                            </div>
-                            <div class="swiper-slide team-member">
-                                <blockquote class="blockquote">
-                                    <p>"They turned our dream home into reality. Great communication and attention to detail!"</p>
-                                    <footer class="blockquote-footer">John D., <cite title="Homeowner">Private Client</cite></footer>
-                                </blockquote>
-                            </div>
-                            <div class="swiper-slide team-member">
-                                <blockquote class="blockquote">
-                                    <p>"Excellent work and professional team! Our office space was delivered ahead of schedule and looks stunning."</p>
-                                    <footer class="blockquote-footer">Sarah M., <cite title="Company">UrbanTech Ltd.</cite></footer>
-                                </blockquote>
-                            </div>
-                            <div class="swiper-slide team-member">
-                                <blockquote class="blockquote">
-                                    <p>"They turned our dream home into reality. Great communication and attention to detail!"</p>
-                                    <footer class="blockquote-footer">John D., <cite title="Homeowner">Private Client</cite></footer>
-                                </blockquote>
+        <section id="testimonials" class="py-5 d-none d-lg-block">
+            <h2 class="text-center">What Out Clients Say</h2>
+            <div class="inner">
+                <div><p>Excellent work and professional team! Our office space was delivered ahead of schedule and looks stunning.</p></div>
+                <div><p>They turned our dream home into reality. Great communication and attention to detail!</p></div>
+                <div><p>Excellent work and professional team! Our office space was delivered ahead of schedule and looks stunning.</p></div>
+                <div><p>They turned our dream home into reality. Great communication and attention to detail!</p></div>
+                <div><p>Excellent work and professional team! Our office space was delivered ahead of schedule and looks stunning.</p></div>
+                <div><p>They turned our dream home into reality. Great communication and attention to detail!</p></div>
+            </div>
+        </section>
+        <section class="whatclientssay py-5 d-lg-none">
+            <div class="container">
+                <div class="row justify-content-between align-items-end">
+                    <h2>What Out Clients Say</h2>
+                    <div class="col-12 Testimonials">
+                        <div class="overlay"></div>
+                        <div class="carousel carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-caption">
+                                        <p>Excellent work and professional team! Our office space was delivered ahead of schedule and looks stunning.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-caption">
+                                        <p>They turned our dream home into reality. Great communication and attention to detail!</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!-- Pagination -->
-                        <div class="swiper-pagination mb-3"></div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <h2>OUR TRACK RECORD</h2>
-                    <small>
-                        A few of the local clients our team members have 
-                        provided unmatched solutions and services for:
-                        <br><br>
-                        Oracle, Guaranty Trust Bank, PWAN, Union Bank, 
-                        Fidelity Bank, Access Bank, Nokia, Diamond Bank,
-                        Shell Petroleum Development Company, Swift Network, 
-                        IHS, MTN, Airtel, Lagos State Government, Smilesdotcom, 
-                        House of Freedom (TPH), Olorisupergal, Greentip, Andela, 
-                        Stanbic IBTC Pensions, Move Easy, Keystone Bank, 
-                        Letrol Global Limited, and Medismarts.
-                    </small>
-                </div>
             </div>
-        </div>
+        </section>
         <!-- Testimonials -->
 
         <!-- Contact/Footer -->
@@ -596,19 +724,20 @@
                         <div class="col-md-2 my-4 my-md-0">
                             <h5>Navigation</h5>
                             <nav>
-                                <a class="d-flex align-items-center justify-content-between" href="index.html">Home <i class="fa fa-arrow-right"></i></a>
-                                <a class="d-flex align-items-center justify-content-between" href="about.html">About Us <i class="fa fa-arrow-right"></i></a>
-                                <a class="d-flex align-items-center justify-content-between" href="service.html">Services <i class="fa fa-arrow-right"></i></a>
-                                <a class="d-flex align-items-center justify-content-between" href="portfolio.html">Portfolio <i class="fa fa-arrow-right"></i></a>
-                                <a class="d-flex align-items-center justify-content-between" href="contact.html">Contact <i class="fa fa-arrow-right"></i></a>
+                                <a class="d-flex align-items-center justify-content-between" href="index.html">Home <i class="fa fa-arrow-right rounded-circle p-2 px-3 d-flex justify-content-center"></i></a>
+                                <a class="d-flex align-items-center justify-content-between" href="about.html">About Us <i class="fa fa-arrow-right rounded-circle p-2 px-3 d-flex justify-content-center"></i></a>
+                                <a class="d-flex align-items-center justify-content-between" href="service.html">Services <i class="fa fa-arrow-right rounded-circle p-2 px-3 d-flex justify-content-center"></i></a>
+                                <a class="d-flex align-items-center justify-content-between" href="project.html">Projects <i class="fa fa-arrow-right rounded-circle p-2 px-3 d-flex justify-content-center"></i></a>
+                                <a class="d-flex align-items-center justify-content-between" href="contact.html">Contact <i class="fa fa-arrow-right rounded-circle p-2 px-3 d-flex justify-content-center"></i></a>
+                    <a href="#" class="quote-btn" data-bs-toggle="modal" data-bs-target="#getquotemodal">Get a Quote</a>
                             </nav>
                         </div>
                         <div class="col-md-6 my-4 my-md-0 text-md-end">
                             <h5>Address</h5>
-                            <h6>Intercultural Office</h6>
+                            <h6>international Office <img src="./images/clients/usa flag.png" width="35px" alt=""></h6>
                             <small>3638 Darvell Circle, Aberdeen 21001, Maryland, USA</small>
                             <br><br>
-                            <h6>West Africa Office - Nigeria</h6>
+                            <h6>West Africa Office <img src="./images/clients/nigeria flag.png" width="35px" alt=""></h6>
                             <small>1: ABUJA: 68 Kwame Nkrumah Crescent, Asokoro.</small> <br>
                             <small>2: LAGOS: 525 Agege Motor Road, Alasia Bus stop, Oshodi.</small>
                         </div>
@@ -650,6 +779,11 @@
             </footer>
             <div class="py-4 text-center footer d-flex justify-content-around align-items-center">
                 <button id="themeToggle" class="btn ">🌙</button>
+                <a href="https://wa.me/2348149628204" target="_blank" 
+                style="color:#25D366; font-size: 40px !important;
+                        text-decoration:none; position: fixed; z-index: 20000; bottom: 10px; left: 20px;">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
                 <p>
                     &copy; 2025 JPAenterprise - All rights reserved
                 </p>
@@ -659,224 +793,337 @@
     </div>
 
 
+    
 
-    <!-- Modals -->
-    <div class="modal fade" id="james" tabindex="-1" aria-labelledby="jamesLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="jamesLabel">Biography</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- get quote modal -->
+    <section id="modals"></section>
+    <!-- get quote modal -->
+    <div class="modal fade" id="getquotemodal" tabindex="-1" aria-labelledby="getquotemodal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="getquotemodal">JPA Quote Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="https://formspree.io/f/xanbalkp" method="post">
+                    <h1>Request a Quote</h1>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group my-1 my-md-0">
+                                <input type="text" id="name" placeholder="Your Name *" name="name" required class="form-control rounded-0">
+                                <label for="name"></label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group my-1 my-md-0">
+                                <input type="email" id="email" placeholder="Your Email *" name="email" required class="form-control rounded-0">
+                                <label for="email"></label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group my-1 my-md-0">
+                                <input type="text" id="phone" placeholder="Phone Number" name="phone" class="form-control rounded-0">
+                                <label for="phone"></label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group my-1 my-md-0">
+                                <select id="country" name="country" class="form-control rounded-0" required>
+                                    <option value="">-- Select Country --</option>
+                                    <option value="AF">Afghanistan</option>
+                                    <option value="AL">Albania</option>
+                                    <option value="DZ">Algeria</option>
+                                    <option value="AS">American Samoa</option>
+                                    <option value="AD">Andorra</option>
+                                    <option value="AO">Angola</option>
+                                    <option value="AR">Argentina</option>
+                                    <option value="AM">Armenia</option>
+                                    <option value="AU">Australia</option>
+                                    <option value="AT">Austria</option>
+                                    <option value="AZ">Azerbaijan</option>
+                                    <option value="BH">Bahrain</option>
+                                    <option value="BD">Bangladesh</option>
+                                    <option value="BB">Barbados</option>
+                                    <option value="BE">Belgium</option>
+                                    <option value="BJ">Benin</option>
+                                    <option value="BT">Bhutan</option>
+                                    <option value="BO">Bolivia</option>
+                                    <option value="BW">Botswana</option>
+                                    <option value="BR">Brazil</option>
+                                    <option value="BN">Brunei</option>
+                                    <option value="BG">Bulgaria</option>
+                                    <option value="BF">Burkina Faso</option>
+                                    <option value="BI">Burundi</option>
+                                    <option value="KH">Cambodia</option>
+                                    <option value="CM">Cameroon</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="CV">Cape Verde</option>
+                                    <option value="TD">Chad</option>
+                                    <option value="CL">Chile</option>
+                                    <option value="CN">China</option>
+                                    <option value="CO">Colombia</option>
+                                    <option value="KM">Comoros</option>
+                                    <option value="CG">Congo</option>
+                                    <option value="CR">Costa Rica</option>
+                                    <option value="HR">Croatia</option>
+                                    <option value="CU">Cuba</option>
+                                    <option value="CY">Cyprus</option>
+                                    <option value="CZ">Czech Republic</option>
+                                    <option value="DK">Denmark</option>
+                                    <option value="DJ">Djibouti</option>
+                                    <option value="DO">Dominican Republic</option>
+                                    <option value="EC">Ecuador</option>
+                                    <option value="EG">Egypt</option>
+                                    <option value="SV">El Salvador</option>
+                                    <option value="EE">Estonia</option>
+                                    <option value="ET">Ethiopia</option>
+                                    <option value="FI">Finland</option>
+                                    <option value="FR">France</option>
+                                    <option value="GA">Gabon</option>
+                                    <option value="GM">Gambia</option>
+                                    <option value="GE">Georgia</option>
+                                    <option value="DE">Germany</option>
+                                    <option value="GH">Ghana</option>
+                                    <option value="GR">Greece</option>
+                                    <option value="GD">Grenada</option>
+                                    <option value="GT">Guatemala</option>
+                                    <option value="GN">Guinea</option>
+                                    <option value="GY">Guyana</option>
+                                    <option value="HT">Haiti</option>
+                                    <option value="HN">Honduras</option>
+                                    <option value="HK">Hong Kong</option>
+                                    <option value="HU">Hungary</option>
+                                    <option value="IN">India</option>
+                                    <option value="ID">Indonesia</option>
+                                    <option value="IR">Iran</option>
+                                    <option value="IQ">Iraq</option>
+                                    <option value="IE">Ireland</option>
+                                    <option value="IL">Israel</option>
+                                    <option value="IT">Italy</option>
+                                    <option value="JM">Jamaica</option>
+                                    <option value="JP">Japan</option>
+                                    <option value="JO">Jordan</option>
+                                    <option value="KZ">Kazakhstan</option>
+                                    <option value="KE">Kenya</option>
+                                    <option value="KR">Korea, South</option>
+                                    <option value="KW">Kuwait</option>
+                                    <option value="KG">Kyrgyzstan</option>
+                                    <option value="LA">Laos</option>
+                                    <option value="LV">Latvia</option>
+                                    <option value="LB">Lebanon</option>
+                                    <option value="LR">Liberia</option>
+                                    <option value="LY">Libya</option>
+                                    <option value="LT">Lithuania</option>
+                                    <option value="LU">Luxembourg</option>
+                                    <option value="MG">Madagascar</option>
+                                    <option value="MW">Malawi</option>
+                                    <option value="MY">Malaysia</option>
+                                    <option value="MV">Maldives</option>
+                                    <option value="ML">Mali</option>
+                                    <option value="MT">Malta</option>
+                                    <option value="MR">Mauritania</option>
+                                    <option value="MU">Mauritius</option>
+                                    <option value="MX">Mexico</option>
+                                    <option value="MD">Moldova</option>
+                                    <option value="MC">Monaco</option>
+                                    <option value="MN">Mongolia</option>
+                                    <option value="ME">Montenegro</option>
+                                    <option value="MA">Morocco</option>
+                                    <option value="MZ">Mozambique</option>
+                                    <option value="NA">Namibia</option>
+                                    <option value="NP">Nepal</option>
+                                    <option value="NL">Netherlands</option>
+                                    <option value="NZ">New Zealand</option>
+                                    <option value="NI">Nicaragua</option>
+                                    <option value="NE">Niger</option>
+                                    <option value="NG">Nigeria</option>
+                                    <option value="NO">Norway</option>
+                                    <option value="OM">Oman</option>
+                                    <option value="PK">Pakistan</option>
+                                    <option value="PA">Panama</option>
+                                    <option value="PG">Papua New Guinea</option>
+                                    <option value="PY">Paraguay</option>
+                                    <option value="PE">Peru</option>
+                                    <option value="PH">Philippines</option>
+                                    <option value="PL">Poland</option>
+                                    <option value="PT">Portugal</option>
+                                    <option value="QA">Qatar</option>
+                                    <option value="RO">Romania</option>
+                                    <option value="RU">Russia</option>
+                                    <option value="RW">Rwanda</option>
+                                    <option value="SA">Saudi Arabia</option>
+                                    <option value="SN">Senegal</option>
+                                    <option value="RS">Serbia</option>
+                                    <option value="SC">Seychelles</option>
+                                    <option value="SG">Singapore</option>
+                                    <option value="SK">Slovakia</option>
+                                    <option value="SI">Slovenia</option>
+                                    <option value="ZA">South Africa</option>
+                                    <option value="ES">Spain</option>
+                                    <option value="LK">Sri Lanka</option>
+                                    <option value="SD">Sudan</option>
+                                    <option value="SE">Sweden</option>
+                                    <option value="CH">Switzerland</option>
+                                    <option value="SY">Syria</option>
+                                    <option value="TW">Taiwan</option>
+                                    <option value="TZ">Tanzania</option>
+                                    <option value="TH">Thailand</option>
+                                    <option value="TG">Togo</option>
+                                    <option value="TT">Trinidad and Tobago</option>
+                                    <option value="TN">Tunisia</option>
+                                    <option value="TR">Turkey</option>
+                                    <option value="UG">Uganda</option>
+                                    <option value="UA">Ukraine</option>
+                                    <option value="AE">United Arab Emirates</option>
+                                    <option value="GB">United Kingdom</option>
+                                    <option value="US">United States</option>
+                                    <option value="UY">Uruguay</option>
+                                    <option value="UZ">Uzbekistan</option>
+                                    <option value="VE">Venezuela</option>
+                                    <option value="VN">Vietnam</option>
+                                    <option value="YE">Yemen</option>
+                                    <option value="ZM">Zambia</option>
+                                    <option value="ZW">Zimbabwe</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group my-1 my-md-0">
+                                <select id="servicetype" name="servicetype" class="form-control rounded-0" required>
+                                    <option value="">-- Select a Service --</option>
+                                    <option value="logistics">Logistics</option>
+                                    <option value="oilgas">Oil and Gas</option>
+                                    <option value="consulting">Consulting</option>
+                                </select>
+                                <label for="servicetype"></label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group my-1 my-md-0">
+                                <select id="subservice" name="subservice" class="form-control rounded-0" required>
+                                    <option value="">-- Select a Sub-Service --</option>
+                                </select>
+                                <label for="budget"></label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group my-1 my-md-0">
+                                <input type="text" id="projecttime" placeholder="Maximum Time for Project *" name="projecttime" required class="form-control rounded-0">
+                                <label for="projecttime"></label>
+                            </div>
+                        </div>                        
+                        <div class="col-6">
+                            <div class="form-group my-1 my-md-0">
+                                <input type="text" id="budget" placeholder="Estimated Budget *" name="budget" required class="form-control rounded-0">
+                                <label for="budget"></label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group my-1 my-md-0">
+                                <textarea cols="" rows="1" id="message" placeholder="Message" name="message" required class="form-control rounded-0"></textarea>
+                                <label for="message"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Send" class="btn btn-primary form-control rounded-0 mt-4" >
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+            </div>
         </div>
-        <div class="modal-body">
-            James Ameh is a very sound and well-respected consultant with over 15 years of global
-            expertise in deploying logistics, procurements, security, project management,
-            community transformation, and other value-adding solutions for clients across different
-            continents and industries. <br><br>
-            He earned a Bachelor’s Degree in International Relationships from the University of
-            Business international School, UBIS Geneva, Switzerland. He also studied Hotel &
-            Restaurant Management at Profes Vocational & Management Institutes in Germany
-            and is certified by Shaw Academy in the United Kingdom as a seasoned entrepreneur
-            and project manager. <br><br>
-            Over the years, he has worked as a critical contributor to the success and advancement
-            of many global organizations. These include his role as the Logistics Administrator at
-            Mercedes Trucks- Daimler AG and the Defense Logistics Agency (a US Army depot) in
-            Germany. These roles currently play a major role in his knowledge of high-level security
-            and his rich network of global security experts. <br><br>
-            He also worked as a Facility manager and Consultant for ICF Gmbh in Germany and
-            serves as the director and CEO of Timax Concept, a global Procurement & Consultant
-            Broker company that is also specialized in providing road/traffic advisory solutions and
-            services.
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-    </div>
     </div>
 
-    <div class="modal fade" id="Obafemi" tabindex="-1" aria-labelledby="ObafemiLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="ObafemiLabel">Biography</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            Obafemi is a distinction graduate of Business Administration from SMC University,
-            Switzerland. He also acquired extensive business knowledge from prestigious institutions like
-            the University of Virginia, University of Maryland, University of Edinburgh, Ludwig
-            Maximillian’s University, Vanderbilt University, and The Pennsylvania State University,
-            especially in the areas of business strategy, innovation, and growth. <br><br>
-            With field experience of over 12 years in the consulting space, Obafemi has worked on
-            diverse projects across various industries and business types. Due to his expertise and
-            experience, he has designed and facilitated diverse strategy, innovation, productivity, and
-            growth-focused solutions for startups, small/ medium-sized companies, and incumbent
-            firms. To mention a few, these include healthcare, food retailing, entertainment, oil and gas,
-            logistics, asset management, real estate, dredging, ride-hailing, fashion, hospitality, and
-            other critical sectors.<br><br>
-            Prior to working with Blue Orb Limited where he serves as the Manager and Lead
-            Consultant, Obafemi worked as the Lead Network Administrator and IT Consultant for Duro
-            Soleye Hospital and Grooveply Limited in Lagos. He also served as the global Strategy
-            Consultant for Depointe Consulting- Ireland, and currently serves as an advisory board
-            member to a few organizations. Obafemi is the Business Intelligence and Operations
-            Manager at JPA Enterprise Limited, where he provides solutions that help the organization
-            and its clients achieve productivity, vibrancy, and growth. As a keen crusader of business
-            productivity/ growth and national transformation, Obafemi has appeared on several
-            national TV and radio to discuss and address diverse socioeconomic and business issues.
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-    </div>
-    </div>
+    <script>
+        // quote form dynamics
+        const serviceOptions = {
+            logistics: ["Air", "Maritime", "Land"],
+            oilgas: ["EP", "Modular Refineries", "Petrochemical", "Storage and Tank Farm", "Import and Export of Oil Products"],
+            consulting: ["Asset Management", "Trade Finance", "PPA"]
+        };
 
-    <div class="modal fade" id="ISAH" tabindex="-1" aria-labelledby="ISAHLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="ISAHLabel">Biography</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            Isah is an Experienced researcher/developer with a demonstrated history of
-            working in the higher education industry. He is skilled in AI, Python, Data
-            Science, Java, C#/C++, and Android Development. He is a strong engineering
-            professional with a Doctor of Philosophy (Ph.D.) focused in Artificial Intelligence
-            and Machine Learning from the African University of Science and Technology. <br><br>
-            He earned his Bachelor’s Degree from the Federal University of Technology Yola
-            where he studied Software Development and Networks, bagged a Master’s
-            Degree in Computer Science, Networks, Semantic Web, and Parallel Computing
-            from Ahmadu Bello University, and earned a Doctorate Degree in Artificial
-            Intelligence and Machine Learning from African University of Science and
-            Technology.<br><br>
-            His professional career journey includes working as a Lecturer, Software
-            Developer, and Network Analyst at Bingham University. He also worked as a
-            researcher at Heidelberg Collaboratory for Image Processing (HCI)- Germany,
-            serves as a Lecturer, Researcher, and Developer at Baze University- Nigeria, and
-            currently serves at JPA Enterprise Limited as the Global Software & Artificial
-            Intelligence Director.
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-    </div>
-    </div>
+        const serviceTypeSelect = document.getElementById("servicetype");
+        const subServiceSelect = document.getElementById("subservice");
 
-    <div class="modal fade" id="EBENEZER" tabindex="-1" aria-labelledby="ObafemiLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="ObafemiLabel">Biography</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            Ebenezer is a full-stack web and software developer with over 8 years of field
-            experience in designing and deploying rich software and web solutions for clients
-            across the world.<br><br>
-            As a Web/Full-stack/Software developer, Web- (HTML, CSS, SCSS, jQuery) and
-            Software development (PHP, Laravel, SQL, PL/SQL), he productively uses the
-            mentioned tools, to create functional, responsive, and impressive Web-/ Software
-            Solutions.<br><br>
-            Due to his many years of international working experience in regions such as USA
-            Hawaii, South Africa, Switzerland, and Germany, as well as his training in
-            Intercultural and International Communication, Ebenezer is able to lead global
-            projects that involve people with different perspectives and cultures.
-            He has worked in different international organizations such as Dicke Kreativ
-            Germany, FitMotion, Siegrist Kreativ, and UofN Kona · Hawaii, United States. He
-            studies and earned a Bachelor of Arts Degree at University of the Nations, Kona,
-            Hawaii.
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-    </div>
-    </div>
+        serviceTypeSelect.addEventListener("change", function() {
+            const selectedService = this.value;
+            subServiceSelect.innerHTML = '<option value="">-- Select a Sub-Service --</option>'; // reset
 
-    <div class="modal fade" id="ADEYEMI" tabindex="-1" aria-labelledby="ObafemiLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="ObafemiLabel">Biography</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            Adeyemi is a seasoned communications expert with deep knowledge of computer
-            networks and fiber technology. He has a field experience of over 21 years, a track
-            record of tackling very complex Fibre/ Network challenges, and a notable reputation for
-            always delivering excellent results. <br><br>
-            He has a robust career history includes working at BT TECHNOLOGIES LTD as the Senior
-            Field Service Engineer, Zmodem Solutions Limited as project supervisor, Safari Telecom
-            group as Quality audit/project planner, and Swift Network as Fiber Technician. He
-            currently serves at JPA as the Information Technology & Communications Manager. He
-            earned a Bachelor’s Degree in Economics from LagosState University, Ojo (Lasu).
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-    </div>
-    </div>
+            if (selectedService && serviceOptions[selectedService]) {
+                serviceOptions[selectedService].forEach(service => {
+                    let option = document.createElement("option");
+                    option.value = service.toLowerCase().replace(/\s+/g, "-");
+                    option.textContent = service;
+                    subServiceSelect.appendChild(option);
+                });
+            }
+        });
+        const serviceTypeSelect2 = document.getElementById("servicetype2");
+        const subServiceSelect2 = document.getElementById("subservice2");
 
-    <div class="modal fade" id="TOLUWA" tabindex="-1" aria-labelledby="ObafemiLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="ObafemiLabel">Biography</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            Toluwa is a highly competent IT and surveillance professional with over 12 years of field
-            experience in Project Management. He is also a certified drone pilot with expertise in
-            surveillance technologies. He studied information system and technology at Bashkir
-            State Pedagogical University, Russia. <br><br>
-            Before joining JPA, Toluwa worked as a Project Manager with Global TSS Johnson Limited
-            and as aLeadConsultant with Mide Global Technologies Limited.
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-    </div>
-    </div>
+        serviceTypeSelect2.addEventListener("change", function() {
+            const selectedService = this.value;
+            subServiceSelect2.innerHTML = '<option value="">-- Select a Sub-Service --</option>'; // reset
 
-    <div class="modal fade" id="ACHILLE" tabindex="-1" aria-labelledby="ObafemiLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="ObafemiLabel">Biography</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            Achille is an experienced Solution Architect with a demonstrated history of working in
-            the information technology and services industry. Skilled in Enterprise Software,
-            Software Design and Implementation, and Customer Relationship Management(CRM). <br><br>
-            His international work experience includes working as a Principal Consultant (Senior
-            Solution Architect) and Implementation Consultant at Oracle. He currently serves as the
-            Global Enterprise Solution Director for JPA Enterprise Limited.<br><br>
-            Achille is a strong consulting professional with a Master's degree focused in E-Business
-            from Hochschule Fulda and a Bachelor’s degree in Computer Programming from the
-            University of Applied Sciences- Worms.
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-        </div>
-    </div>
-    </div>
-  
-   </div>
+            if (selectedService && serviceOptions[selectedService]) {
+                serviceOptions[selectedService].forEach(service => {
+                    let option = document.createElement("option");
+                    option.value = service.toLowerCase().replace(/\s+/g, "-");
+                    option.textContent = service;
+                    subServiceSelect2.appendChild(option);
+                });
+            }
+        });
+    </script>
+
+
+   
 
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="./assets/swiper/swiper.js"></script>
     <script src="./assets/lightbox/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./assets/main.js"></script>
     <script src="./assets/loadcomponent.js"></script>
     <script>
         loadcomponents('topnav', 'components/topnav.html')
+        // loadcomponents('modals', 'components/modals.html')
+    </script>
+    <script>
+        // typescript
+        var typed = new Typed('#typed', {
+            strings: ["Consulting", "Oil & Gas", "Logistics"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+
+
+
+    <button class="float-btn" id="scrollBtn"><i class="fa fa-arrow-up"></i></button>
+
+    <script>
+        const navbar = document.getElementById("navscroll");
+        const scrollBtn = document.getElementById("scrollBtn");
+
+        window.addEventListener("scroll", () => {
+        if (window.scrollY > 150) { 
+            scrollBtn.classList.add("show");
+            navbar.classList.add("stick");
+        } else {
+            scrollBtn.classList.remove("show");
+            navbar.classList.remove("stick");
+        }
+        });
+
+        // Scroll back to top when clicked
+        scrollBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        
+        });
     </script>
 </body>
 </html>
