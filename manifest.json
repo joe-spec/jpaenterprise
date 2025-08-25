@@ -1,0 +1,20 @@
+{
+  "name": "JPA Enterprise",
+  "short_name": "JPA",
+  "start_url": "/index",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#004a99",
+  "icons": [
+    {
+      "src": "./images/jpa logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/jpa logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
